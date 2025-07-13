@@ -566,14 +566,59 @@ const App = () => {
             )}
 
             <div className="events-section">
-              <h3>Upcoming Events</h3>
+              <h3>Next 7 Days</h3>
               {loading ? (
                 <div className="loading">Loading events...</div>
               ) : (
-                <div className="events-grid">
-                  {events.map(event => (
-                    <EventCard key={event.id} event={event} />
-                  ))}
+                <div className="events-timeline">
+                  {(() => {
+                    // Get next 7 days
+                    const today = new Date();
+                    const next7Days = [];
+                    for (let i = 0; i < 7; i++) {
+                      const date = new Date(today);
+                      date.setDate(today.getDate() + i);
+                      next7Days.push(date.toISOString().split('T')[0]);
+                    }
+
+                    // Group events by date for the next 7 days
+                    const eventsByDate = {};
+                    events.forEach(event => {
+                      if (next7Days.includes(event.date)) {
+                        if (!eventsByDate[event.date]) {
+                          eventsByDate[event.date] = [];
+                        }
+                        eventsByDate[event.date].push(event);
+                      }
+                    });
+
+                    return next7Days.map(date => {
+                      const dayEvents = eventsByDate[date] || [];
+                      const dayName = new Date(date).toLocaleDateString('en-US', { 
+                        weekday: 'long',
+                        month: 'short',
+                        day: 'numeric'
+                      });
+                      
+                      return (
+                        <div key={date} className="day-section">
+                          <div className="day-header">
+                            <h4>{dayName}</h4>
+                            <span className="event-count">{dayEvents.length} event{dayEvents.length !== 1 ? 's' : ''}</span>
+                          </div>
+                          <div className="day-events">
+                            {dayEvents.length === 0 ? (
+                              <div className="no-events">No events scheduled</div>
+                            ) : dayEvents.length === 1 ? (
+                              <EventCard event={dayEvents[0]} />
+                            ) : (
+                              <EventDeck events={dayEvents} />
+                            )}
+                          </div>
+                        </div>
+                      );
+                    });
+                  })()}
                 </div>
               )}
             </div>
