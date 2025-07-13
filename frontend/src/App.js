@@ -5,6 +5,7 @@ const App = () => {
   const [events, setEvents] = useState([]);
   const [summary, setSummary] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
+  const [language, setLanguage] = useState('en');
   const [currentView, setCurrentView] = useState('home');
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -17,6 +18,90 @@ const App = () => {
   const [adminConfig, setAdminConfig] = useState(null);
 
   const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
+
+  // Translations
+  const translations = {
+    en: {
+      title: 'Valencia Events',
+      home: 'Home',
+      calendar: 'Calendar',
+      login: 'Login',
+      admin: 'Admin',
+      discoverTitle: "Discover Valencia's Cultural Heart",
+      discoverSubtitle: 'Experience the authentic events that make Valencia unique',
+      thisWeek: 'This Week in Valencia',
+      next7Days: 'Next 7 Days',
+      upcomingEvents: 'Upcoming Events',
+      loadingEvents: 'Loading events...',
+      noEvents: 'No events scheduled',
+      noEventsDay: 'No events scheduled for this day',
+      eventsOn: 'Events on',
+      event: 'event',
+      events: 'events',
+      source: 'Source',
+      date: 'Date',
+      location: 'Location',
+      address: 'Address',
+      district: 'District',
+      viewOn: 'View on',
+      adminPanel: 'Admin Panel',
+      logout: 'Logout',
+      configuration: 'Configuration',
+      city: 'City',
+      openaiKey: 'OpenAI API Key',
+      categories: 'Categories',
+      updateConfig: 'Update Configuration',
+      generateContent: 'Generate Content',
+      startDate: 'Start Date',
+      endDate: 'End Date',
+      generateEvents: 'Generate Events',
+      generateSummary: 'Generate Summary',
+      adminLogin: 'Admin Login',
+      username: 'Username',
+      password: 'Password'
+    },
+    es: {
+      title: 'Eventos Valencia',
+      home: 'Inicio',
+      calendar: 'Calendario',
+      login: 'Acceder',
+      admin: 'Admin',
+      discoverTitle: 'Descubre el Corazón Cultural de Valencia',
+      discoverSubtitle: 'Vive los eventos auténticos que hacen única a Valencia',
+      thisWeek: 'Esta Semana en Valencia',
+      next7Days: 'Próximos 7 Días',
+      upcomingEvents: 'Próximos Eventos',
+      loadingEvents: 'Cargando eventos...',
+      noEvents: 'No hay eventos programados',
+      noEventsDay: 'No hay eventos programados para este día',
+      eventsOn: 'Eventos el',
+      event: 'evento',
+      events: 'eventos',
+      source: 'Fuente',
+      date: 'Fecha',
+      location: 'Ubicación',
+      address: 'Dirección',
+      district: 'Distrito',
+      viewOn: 'Ver en',
+      adminPanel: 'Panel de Administración',
+      logout: 'Cerrar Sesión',
+      configuration: 'Configuración',
+      city: 'Ciudad',
+      openaiKey: 'Clave API OpenAI',
+      categories: 'Categorías',
+      updateConfig: 'Actualizar Configuración',
+      generateContent: 'Generar Contenido',
+      startDate: 'Fecha de Inicio',
+      endDate: 'Fecha de Fin',
+      generateEvents: 'Generar Eventos',
+      generateSummary: 'Generar Resumen',
+      adminLogin: 'Acceso de Administrador',
+      username: 'Usuario',
+      password: 'Contraseña'
+    }
+  };
+
+  const t = (key) => translations[language][key] || key;
 
   useEffect(() => {
     fetchEvents();
