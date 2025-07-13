@@ -633,8 +633,8 @@ const App = () => {
           <div className="home-view">
             <div className="hero-section">
               <div className="hero-content">
-                <h2>Discover Valencia's Cultural Heart</h2>
-                <p>Experience the authentic events that make Valencia unique</p>
+                <h2>{t('discoverTitle')}</h2>
+                <p>{t('discoverSubtitle')}</p>
               </div>
               <div className="hero-image">
                 <img src="https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85" alt="Valencia cityscape" />
@@ -643,7 +643,7 @@ const App = () => {
 
             {summary && (
               <div className="summary-section">
-                <h3>This Week in Valencia</h3>
+                <h3>{t('thisWeek')}</h3>
                 <p>{summary.summary}</p>
                 <div className="summary-meta">
                   <span>{summary.start_date} - {summary.end_date}</span>
@@ -657,9 +657,9 @@ const App = () => {
             )}
 
             <div className="events-section">
-              <h3>Next 7 Days</h3>
+              <h3>{t('next7Days')}</h3>
               {loading ? (
-                <div className="loading">Loading events...</div>
+                <div className="loading">{t('loadingEvents')}</div>
               ) : (
                 <div className="events-timeline">
                   {(() => {
@@ -685,7 +685,7 @@ const App = () => {
 
                     return next7Days.map(date => {
                       const dayEvents = eventsByDate[date] || [];
-                      const dayName = new Date(date).toLocaleDateString('en-US', { 
+                      const dayName = new Date(date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
                         weekday: 'long',
                         month: 'short',
                         day: 'numeric'
@@ -695,11 +695,13 @@ const App = () => {
                         <div key={date} className="day-section">
                           <div className="day-header">
                             <h4>{dayName}</h4>
-                            <span className="event-count">{dayEvents.length} event{dayEvents.length !== 1 ? 's' : ''}</span>
+                            <span className="event-count">
+                              {dayEvents.length} {dayEvents.length === 1 ? t('event') : t('events')}
+                            </span>
                           </div>
                           <div className="day-events">
                             {dayEvents.length === 0 ? (
-                              <div className="no-events">No events scheduled</div>
+                              <div className="no-events">{t('noEvents')}</div>
                             ) : dayEvents.length === 1 ? (
                               <EventCard event={dayEvents[0]} />
                             ) : (
