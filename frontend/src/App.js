@@ -379,7 +379,7 @@ const App = () => {
               <div className="event-image">
                 <img src={event.imageUrl} alt={event.title} />
                 <div className="event-date-badge">
-                  {new Date(event.date).toLocaleDateString('en-US', { 
+                  {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
                     month: 'short', 
                     day: 'numeric' 
                   })}
