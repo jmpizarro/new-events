@@ -79,20 +79,39 @@ class GenerateEventsRequest(BaseModel):
     end_date: str
 
 # Mock data for initial setup
+# Mock data for initial setup
 MOCK_EVENTS = [
     {
         "id": str(uuid.uuid4()),
         "title": "Valencia Jazz Festival",
-        "date": "2025-07-15",
+        "date": "2025-07-17",
         "location": {
-            "name": "Palau de la Música",
-            "address": "Carrer de la Música, 5, 46008 Valencia",
+            "name": "Teatro Principal",
+            "address": "Carrer de les Barques, 15, 46002 Valencia",
             "district": "Ciutat Vella"
         },
-        "description": "Experience the finest jazz performances from local and international artists. This festival blends traditional and contemporary jazz styles. Perfect for music lovers seeking cultural enrichment.",
+        "description": "Experience a vibrant showcase of jazz music. This festival brings together acclaimed musicians from around the world in an intimate setting. Perfect for jazz enthusiasts and music lovers alike.",
         "imageUrl": "https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
         "source": {
-            "url": "https://visitvalencia.com/events/valencia-jazz-festival",
+            "url": "https://valencia.es/agenda/valencia-jazz-festival",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Fallas de Valencia",
+        "date": "2025-07-17",
+        "location": {
+            "name": "Various Locations",
+            "address": "Calle de la Paz, 46003 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the vibrant tradition of Fallas with stunning fireworks and artistic displays. This annual festival showcases intricate sculptures that are burned in a grand finale. Perfect for culture seekers and families.",
+        "imageUrl": "https://images.unsplash.com/photo-1654079829969-eab18faf843d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxjdWx0dXJhbCUyMGZlc3RpdmFsfGVufDB8fHxibHVlfDE3NTI0MzAwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/fallas",
             "mainUrl": "https://visitvalencia.com",
             "provider": "Visit Valencia"
         },
@@ -100,19 +119,127 @@ MOCK_EVENTS = [
     },
     {
         "id": str(uuid.uuid4()),
-        "title": "Fira del Llibre Ruzafa",
+        "title": "Valencia Food Market",
         "date": "2025-07-18",
         "location": {
-            "name": "Ruzafa Market",
-            "address": "Carrer de Ruzafa, 46006 Valencia",
-            "district": "Ruzafa"
+            "name": "Central Market of Valencia",
+            "address": "Carrer de les Mantes, 46001 Valencia",
+            "district": "Ciutat Vella"
         },
-        "description": "Discover the rich literary traditions of Valencia at this vibrant book fair. Meet local authors and explore Valencian literature. Perfect for book lovers and cultural enthusiasts.",
+        "description": "Experience the delicious flavors of Valencia at the Central Market. This weekly event features local vendors offering fresh produce, artisanal products, and more. Perfect for foodies and culinary adventurers.",
         "imageUrl": "https://images.unsplash.com/photo-1704468251489-f9dd54f7c85d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
         "source": {
-            "url": "https://visitvalencia.com/events/fira-del-llibre-ruzafa",
+            "url": "https://valencia.es/agenda/valencia-food-market",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Valencia Street Art Tour",
+        "date": "2025-07-18",
+        "location": {
+            "name": "Starts at Plaza de la Virgen",
+            "address": "Plaza de la Virgen, 46001 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the vibrant street art scene of Valencia. This guided tour takes you through the most colorful neighborhoods and showcases the work of local artists. Perfect for art lovers and urban explorers.",
+        "imageUrl": "https://images.unsplash.com/photo-1661030190165-5359ce7080bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/street-art-tour",
             "mainUrl": "https://visitvalencia.com",
             "provider": "Visit Valencia"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Valencia Night Market",
+        "date": "2025-07-19",
+        "location": {
+            "name": "Plaza del Mercado",
+            "address": "Plaza del Mercado, 46001 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the lively atmosphere of Valencia's Night Market. This event features live music, local crafts, and delicious street food under the stars. Perfect for night owls and social butterflies.",
+        "imageUrl": "https://images.pexels.com/photos/418285/pexels-photo-418285.jpeg",
+        "source": {
+            "url": "https://valencia.es/agenda/valencia-night-market",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Open Air Cinema: Classic Films",
+        "date": "2025-07-19",
+        "location": {
+            "name": "Jardines del Turia",
+            "address": "Carrer de l'Arquebisbe Mayoral, 46009 Valencia",
+            "district": "Extramurs"
+        },
+        "description": "Experience the magic of cinema under the stars. This event features classic films screened in a beautiful garden setting. Perfect for movie lovers and romantics.",
+        "imageUrl": "https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/open-air-cinema",
+            "mainUrl": "https://visitvalencia.com",
+            "provider": "Visit Valencia"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Valencia Music Fest",
+        "date": "2025-07-20",
+        "location": {
+            "name": "La Marina de Valencia",
+            "address": "Avinguda de l'Oceanogràfic, 46012 Valencia",
+            "district": "Poblats Marítims"
+        },
+        "description": "Experience a diverse lineup of local and international artists at the Valencia Music Fest. The festival takes place by the sea, creating a unique atmosphere. Perfect for music lovers and festival-goers.",
+        "imageUrl": "https://images.unsplash.com/photo-1654079829969-eab18faf843d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxjdWx0dXJhbCUyMGZlc3RpdmFsfGVufDB8fHxibHVlfDE3NTI0MzAwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://valencia.es/agenda/valencia-music-fest",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Artisan Craft Fair",
+        "date": "2025-07-20",
+        "location": {
+            "name": "Plaza de la Reina",
+            "address": "Plaza de la Reina, 46001 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the creativity of local artisans at the Artisan Craft Fair. This event showcases handmade crafts and unique products from the region. Perfect for shoppers and those seeking one-of-a-kind souvenirs.",
+        "imageUrl": "https://images.unsplash.com/photo-1704468251489-f9dd54f7c85d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/artisan-craft-fair",
+            "mainUrl": "https://visitvalencia.com",
+            "provider": "Visit Valencia"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Cultural Dance Festival",
+        "date": "2025-07-21",
+        "location": {
+            "name": "Palau de la Música",
+            "address": "Carrer de l'Erudito Orellana, 46013 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the rhythms and movements of traditional dances from around the world. This festival brings together dancers and performers for a spectacular showcase. Perfect for culture enthusiasts and families.",
+        "imageUrl": "https://images.unsplash.com/photo-1661030190165-5359ce7080bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://valencia.es/agenda/cultural-dance-festival",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
         },
         "created_at": datetime.now()
     },
@@ -126,7 +253,7 @@ MOCK_EVENTS = [
             "district": "Ciutat Vella"
         },
         "description": "Experience the best of local and international brews at the Valencia Beer Festival. This event features tastings, food pairings, and live music. Perfect for beer lovers and socializing.",
-        "imageUrl": "https://images.unsplash.com/photo-1661030190165-5359ce7080bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "imageUrl": "https://images.pexels.com/photos/418285/pexels-photo-418285.jpeg",
         "source": {
             "url": "https://visitvalencia.com/events/valencia-beer-festival",
             "mainUrl": "https://visitvalencia.com",
@@ -136,17 +263,107 @@ MOCK_EVENTS = [
     },
     {
         "id": str(uuid.uuid4()),
-        "title": "Gastronomy Festival",
-        "date": "2025-07-25",
+        "title": "Valencia Running Festival",
+        "date": "2025-07-22",
         "location": {
-            "name": "Mercado Central",
-            "address": "Plaça del Mercat, 46001 Valencia",
-            "district": "Ciutat Vella"
+            "name": "City of Arts and Sciences",
+            "address": "Avenida del Profesor López Piñero, 7, 46013 Valencia",
+            "district": "Quatre Carreres"
         },
-        "description": "Savor the authentic flavors of Valencia at this culinary celebration. Experience traditional dishes prepared by renowned local chefs. Perfect for food enthusiasts and cultural discovery.",
+        "description": "Experience the excitement of running in one of Valencia's most iconic locations. Participants can choose from various distances, making it accessible for everyone. Perfect for fitness enthusiasts and families.",
+        "imageUrl": "https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://valencia.es/agenda/valencia-running-festival",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Family Fun Day",
+        "date": "2025-07-22",
+        "location": {
+            "name": "Turia Gardens",
+            "address": "Carrer de la Ciutat de Brujas, 46015 Valencia",
+            "district": "Algirós"
+        },
+        "description": "Experience a day of fun and activities for the whole family at Turia Gardens. This event features games, workshops, and entertainment for all ages. Perfect for families and children.",
         "imageUrl": "https://images.unsplash.com/photo-1654079829969-eab18faf843d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxjdWx0dXJhbCUyMGZlc3RpdmFsfGVufDB8fHxibHVlfDE3NTI0MzAwNjF8MA&ixlib=rb-4.1.0&q=85",
         "source": {
-            "url": "https://visitvalencia.com/events/gastronomy-festival",
+            "url": "https://visitvalencia.com/events/family-fun-day",
+            "mainUrl": "https://visitvalencia.com",
+            "provider": "Visit Valencia"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Sunset Yoga in the Park",
+        "date": "2025-07-23",
+        "location": {
+            "name": "Jardines de Monforte",
+            "address": "Carrer de la Monforte, 46010 Valencia",
+            "district": "Eixample"
+        },
+        "description": "Experience relaxation and mindfulness with sunset yoga in a beautiful park. This session is designed for all skill levels and promotes well-being. Perfect for wellness seekers and nature lovers.",
+        "imageUrl": "https://images.unsplash.com/photo-1704468251489-f9dd54f7c85d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://valencia.es/agenda/sunset-yoga",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Valencia Book Fair",
+        "date": "2025-07-23",
+        "location": {
+            "name": "Plaza del Ayuntamiento",
+            "address": "Plaza del Ayuntamiento, 46002 Valencia",
+            "district": "Ciutat Vella"
+        },
+        "description": "Experience the literary world at the Valencia Book Fair. This event features local authors, book signings, and readings in a lively atmosphere. Perfect for book lovers and aspiring writers.",
+        "imageUrl": "https://images.unsplash.com/photo-1661030190165-5359ce7080bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/valencia-book-fair",
+            "mainUrl": "https://visitvalencia.com",
+            "provider": "Visit Valencia"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Meditation Retreat",
+        "date": "2025-07-24",
+        "location": {
+            "name": "La Albufera Natural Park",
+            "address": "Ctra. Albufera, 46012 Valencia",
+            "district": "Albufera"
+        },
+        "description": "Experience tranquility and rejuvenation during a meditation retreat in nature. This retreat offers guided sessions and a chance to connect with the natural surroundings. Perfect for those seeking peace and self-discovery.",
+        "imageUrl": "https://images.pexels.com/photos/418285/pexels-photo-418285.jpeg",
+        "source": {
+            "url": "https://valencia.es/agenda/meditation-retreat",
+            "mainUrl": "https://valencia.es",
+            "provider": "Valencia City Council"
+        },
+        "created_at": datetime.now()
+    },
+    {
+        "id": str(uuid.uuid4()),
+        "title": "Valencia Summer Festival",
+        "date": "2025-07-24",
+        "location": {
+            "name": "Plaza de Toros",
+            "address": "Carrer de Xàtiva, 28, 46002 Valencia",
+            "district": "Extramurs"
+        },
+        "description": "Experience a vibrant celebration of summer with music, dance, and food at the Valencia Summer Festival. This event features local artists and delicious cuisine. Perfect for festival enthusiasts and families.",
+        "imageUrl": "https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85",
+        "source": {
+            "url": "https://visitvalencia.com/events/valencia-summer-festival",
             "mainUrl": "https://visitvalencia.com",
             "provider": "Visit Valencia"
         },
