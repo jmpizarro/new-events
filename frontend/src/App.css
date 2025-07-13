@@ -250,6 +250,214 @@ body {
   gap: 2rem;
 }
 
+.events-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.day-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.day-header h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.event-count {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  background-color: var(--bg-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+}
+
+.day-events {
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+}
+
+.no-events {
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Deck of cards styles */
+.event-deck-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.event-deck {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.event-card-deck {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.event-card-deck:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 
+    0 16px 48px rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.event-card-deck.active {
+  box-shadow: 
+    0 12px 40px rgba(30, 64, 175, 0.2),
+    0 6px 20px rgba(30, 64, 175, 0.1);
+}
+
+.event-card-deck .event-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.event-card-deck .event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-medium);
+}
+
+.event-card-deck:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.event-card-deck .event-date-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-card-deck .event-content {
+  padding: 1.5rem;
+  height: 250px;
+  overflow-y: auto;
+}
+
+.event-card-deck .event-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.event-card-deck .event-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.event-card-deck .event-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.event-card-deck .event-source {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Deck navigation */
+.deck-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nav-arrow {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.nav-arrow:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(30, 64, 175, 0.4);
+}
+
+.nav-arrow:active {
+  transform: scale(0.95);
+}
+
+.nav-arrow svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.deck-counter {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+/* Regular event card styles */
 .event-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -258,6 +466,8 @@ body {
   box-shadow: var(--shadow-md);
   transition: var(--transition-medium);
   cursor: pointer;
+  max-width: 400px;
+  width: 100%;
 }
 
 .event-card:hover {
