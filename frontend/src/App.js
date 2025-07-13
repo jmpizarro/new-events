@@ -632,9 +632,17 @@ const App = () => {
               <div className="selected-date-events">
                 <h3>Events on {new Date(selectedDate).toLocaleDateString()}</h3>
                 <div className="events-list">
-                  {events.filter(event => event.date === selectedDate).map(event => (
-                    <EventCard key={event.id} event={event} />
-                  ))}
+                  {(() => {
+                    const dayEvents = events.filter(event => event.date === selectedDate);
+                    
+                    if (dayEvents.length === 0) {
+                      return <div className="no-events">No events scheduled for this day</div>;
+                    } else if (dayEvents.length === 1) {
+                      return <EventCard event={dayEvents[0]} />;
+                    } else {
+                      return <EventDeck events={dayEvents} />;
+                    }
+                  })()}
                 </div>
               </div>
             )}
