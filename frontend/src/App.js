@@ -590,8 +590,14 @@ const App = () => {
     <div className={`app ${darkMode ? 'dark' : ''}`}>
       <header className="app-header">
         <div className="header-content">
-          <h1 className="app-title">Valencia Events</h1>
+          <h1 className="app-title">{t('title')}</h1>
           <div className="header-actions">
+            <button
+              className="language-toggle"
+              onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
+            >
+              {language === 'en' ? '🇪🇸 ES' : '🇬🇧 EN'}
+            </button>
             <button
               className="theme-toggle"
               onClick={() => setDarkMode(!darkMode)}
@@ -603,19 +609,19 @@ const App = () => {
                 className={`nav-item ${currentView === 'home' ? 'active' : ''}`}
                 onClick={() => setCurrentView('home')}
               >
-                Home
+                {t('home')}
               </button>
               <button
                 className={`nav-item ${currentView === 'calendar' ? 'active' : ''}`}
                 onClick={() => setCurrentView('calendar')}
               >
-                Calendar
+                {t('calendar')}
               </button>
               <button
                 className={`nav-item ${currentView === 'admin' ? 'active' : ''}`}
                 onClick={() => setCurrentView('admin')}
               >
-                {isAdmin ? 'Admin' : 'Login'}
+                {isAdmin ? t('admin') : t('login')}
               </button>
             </nav>
           </div>
