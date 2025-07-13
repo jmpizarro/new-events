@@ -559,12 +559,12 @@ const App = () => {
   const LoginForm = () => (
     <div className="login-container">
       <div className="login-form">
-        <h2>Admin Login</h2>
+        <h2>{t('adminLogin')}</h2>
         <form onSubmit={handleAdminLogin}>
           <div className="form-group">
             <input
               type="text"
-              placeholder="Username"
+              placeholder={t('username')}
               value={adminForm.username}
               onChange={(e) => setAdminForm({...adminForm, username: e.target.value})}
               required
@@ -573,13 +573,13 @@ const App = () => {
           <div className="form-group">
             <input
               type="password"
-              placeholder="Password"
+              placeholder={t('password')}
               value={adminForm.password}
               onChange={(e) => setAdminForm({...adminForm, password: e.target.value})}
               required
             />
           </div>
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn">{t('login')}</button>
         </form>
       </div>
     </div>
