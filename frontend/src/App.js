@@ -395,7 +395,7 @@ const App = () => {
                 </p>
                 <p className="event-description">{event.description}</p>
                 <div className="event-source">
-                  <span>Source: {event.source.provider}</span>
+                  <span>{t('source')}: {event.source.provider}</span>
                 </div>
               </div>
             </div>
