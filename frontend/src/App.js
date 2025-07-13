@@ -723,13 +723,13 @@ const App = () => {
             <Calendar />
             {selectedDate && (
               <div className="selected-date-events">
-                <h3>Events on {new Date(selectedDate).toLocaleDateString()}</h3>
+                <h3>{t('eventsOn')} {new Date(selectedDate).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US')}</h3>
                 <div className="events-list">
                   {(() => {
                     const dayEvents = events.filter(event => event.date === selectedDate);
                     
                     if (dayEvents.length === 0) {
-                      return <div className="no-events">No events scheduled for this day</div>;
+                      return <div className="no-events">{t('noEventsDay')}</div>;
                     } else if (dayEvents.length === 1) {
                       return <EventCard event={dayEvents[0]} />;
                     } else {
