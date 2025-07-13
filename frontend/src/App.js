@@ -432,7 +432,7 @@ const App = () => {
           <h2>{event.title}</h2>
           <div className="event-details">
             <div className="detail-item">
-              <strong>Date:</strong> {new Date(event.date).toLocaleDateString('en-US', { 
+              <strong>{t('date')}:</strong> {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
                 weekday: 'long', 
                 year: 'numeric', 
                 month: 'long', 
@@ -440,19 +440,19 @@ const App = () => {
               })}
             </div>
             <div className="detail-item">
-              <strong>Location:</strong> {event.location.name}
+              <strong>{t('location')}:</strong> {event.location.name}
             </div>
             <div className="detail-item">
-              <strong>Address:</strong> {event.location.address}
+              <strong>{t('address')}:</strong> {event.location.address}
             </div>
             <div className="detail-item">
-              <strong>District:</strong> {event.location.district}
+              <strong>{t('district')}:</strong> {event.location.district}
             </div>
           </div>
           <p className="event-description">{event.description}</p>
           <div className="event-source">
             <a href={event.source.url} target="_blank" rel="noopener noreferrer">
-              View on {event.source.provider}
+              {t('viewOn')} {event.source.provider}
             </a>
           </div>
         </div>
