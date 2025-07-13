@@ -486,15 +486,15 @@ const App = () => {
     return (
       <div className="admin-panel">
         <div className="admin-header">
-          <h2>Admin Panel</h2>
-          <button onClick={handleAdminLogout} className="logout-btn">Logout</button>
+          <h2>{t('adminPanel')}</h2>
+          <button onClick={handleAdminLogout} className="logout-btn">{t('logout')}</button>
         </div>
         
         <div className="admin-section">
-          <h3>Configuration</h3>
+          <h3>{t('configuration')}</h3>
           <form onSubmit={handleConfigSubmit} className="config-form">
             <div className="form-group">
-              <label>City:</label>
+              <label>{t('city')}:</label>
               <input
                 type="text"
                 value={configForm.city || ''}
@@ -502,7 +502,7 @@ const App = () => {
               />
             </div>
             <div className="form-group">
-              <label>OpenAI API Key:</label>
+              <label>{t('openaiKey')}:</label>
               <input
                 type="password"
                 value={configForm.openai_api_key || ''}
@@ -511,22 +511,22 @@ const App = () => {
               />
             </div>
             <div className="form-group">
-              <label>Categories:</label>
+              <label>{t('categories')}:</label>
               <input
                 type="text"
                 value={configForm.categories?.join(', ') || ''}
                 onChange={(e) => setConfigForm({...configForm, categories: e.target.value.split(', ')})}
               />
             </div>
-            <button type="submit" className="submit-btn">Update Configuration</button>
+            <button type="submit" className="submit-btn">{t('updateConfig')}</button>
           </form>
         </div>
 
         <div className="admin-section">
-          <h3>Generate Content</h3>
+          <h3>{t('generateContent')}</h3>
           <form className="generate-form">
             <div className="form-group">
-              <label>Start Date:</label>
+              <label>{t('startDate')}:</label>
               <input
                 type="date"
                 value={generateForm.start_date}
@@ -534,7 +534,7 @@ const App = () => {
               />
             </div>
             <div className="form-group">
-              <label>End Date:</label>
+              <label>{t('endDate')}:</label>
               <input
                 type="date"
                 value={generateForm.end_date}
@@ -543,10 +543,10 @@ const App = () => {
             </div>
             <div className="button-group">
               <button type="button" onClick={handleGenerateEvents} className="generate-btn">
-                Generate Events
+                {t('generateEvents')}
               </button>
               <button type="button" onClick={handleGenerateSummary} className="generate-btn">
-                Generate Summary
+                {t('generateSummary')}
               </button>
             </div>
           </form>
