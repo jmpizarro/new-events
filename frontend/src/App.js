@@ -264,6 +264,79 @@ const App = () => {
     </div>
   );
 
+  // Deck of cards component for multiple events on same day
+  const EventDeck = ({ events }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const currentEvent = events[currentIndex];
+
+    const nextEvent = () => {
+      setCurrentIndex((prev) => (prev + 1) % events.length);
+    };
+
+    const prevEvent = () => {
+      setCurrentIndex((prev) => (prev - 1 + events.length) % events.length);
+    };
+
+    return (
+      <div className="event-deck-container">
+        <div className="event-deck">
+          {events.map((event, index) => (
+            <div
+              key={event.id}
+              className={`event-card-deck ${index === currentIndex ? 'active' : ''}`}
+              style={{
+                transform: `translateY(${(index - currentIndex) * 8}px) translateX(${(index - currentIndex) * 4}px)`,
+                zIndex: events.length - Math.abs(index - currentIndex),
+                opacity: Math.abs(index - currentIndex) > 2 ? 0 : 1,
+              }}
+              onClick={() => setSelectedEvent(event)}
+            >
+              <div className="event-image">
+                <img src={event.imageUrl} alt={event.title} />
+                <div className="event-date-badge">
+                  {new Date(event.date).toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </div>
+              </div>
+              <div className="event-content">
+                <h3>{event.title}</h3>
+                <p className="event-location">
+                  <svg className="location-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  {event.location.name}, {event.location.district}
+                </p>
+                <p className="event-description">{event.description}</p>
+                <div className="event-source">
+                  <span>Source: {event.source.provider}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {events.length > 1 && (
+          <div className="deck-navigation">
+            <button className="nav-arrow nav-arrow-left" onClick={prevEvent}>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+              </svg>
+            </button>
+            <div className="deck-counter">
+              <span>{currentIndex + 1} / {events.length}</span>
+            </div>
+            <button className="nav-arrow nav-arrow-right" onClick={nextEvent}>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+              </svg>
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   // Event detail modal
   const EventDetailModal = ({ event, onClose }) => (
     <div className="modal-overlay" onClick={onClose}>
