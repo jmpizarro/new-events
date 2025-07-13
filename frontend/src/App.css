@@ -102,18 +102,26 @@ body {
   gap: 1rem;
 }
 
+.language-toggle,
 .theme-toggle {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   transition: var(--transition-fast);
+  color: var(--text-primary);
 }
 
+.language-toggle:hover,
 .theme-toggle:hover {
   background-color: var(--bg-secondary);
+}
+
+.language-toggle {
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .nav-menu {
