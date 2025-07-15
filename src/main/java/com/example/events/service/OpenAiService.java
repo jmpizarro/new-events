@@ -1,20 +1,23 @@
 package com.example.events.service;
 
-import org.springframework.ai.client.AiClient;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OpenAiService {
 
-    private final AiClient aiClient;
+    private final ChatClient chatClient;
 
     @Autowired
-    public OpenAiService(AiClient aiClient) {
-        this.aiClient = aiClient;
+    public OpenAiService(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
     }
 
     public String chat(String prompt) {
-        return aiClient.generate(prompt);
+        return this.chatClient.prompt()
+                .user(prompt)
+                .call()
+                .content();
     }
 }

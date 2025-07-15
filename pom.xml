@@ -37,7 +37,7 @@
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-            <version>0.8.1</version>
+            <version>1.0.0-M6</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
