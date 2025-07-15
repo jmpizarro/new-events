@@ -1,8 +1,6 @@
 package com.example.events.controller;
 
 import com.example.events.model.AdminConfig;
-import com.example.events.model.Event;
-import com.example.events.model.EventSummary;
 import com.example.events.repository.AdminConfigRepository;
 import com.example.events.repository.EventRepository;
 import com.example.events.repository.EventSummaryRepository;
