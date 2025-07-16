@@ -17,7 +17,7 @@ const App = () => {
   const [adminForm, setAdminForm] = useState({ username: '', password: '' });
   const [adminConfig, setAdminConfig] = useState(null);
 
-  const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
+  const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8088';
 
   // Translations
   const translations = {
@@ -169,6 +169,7 @@ const App = () => {
         const data = await response.json();
         setAdminToken(data.token);
         localStorage.setItem('adminToken', data.token);
+        console.info("admin token generated:" + data.token);
         setIsAdmin(true);
         setCurrentView('admin');
         fetchAdminConfig();
@@ -464,7 +465,7 @@ const App = () => {
   const AdminPanel = () => {
     const [configForm, setConfigForm] = useState(adminConfig || {});
     const [generateForm, setGenerateForm] = useState({
-      start_date: '2025-07-01',
+      start_date: '2025-07-16',
       end_date: '2025-07-31'
     });
 
@@ -505,8 +506,8 @@ const App = () => {
               <label>{t('openaiKey')}:</label>
               <input
                 type="password"
-                value={configForm.openai_api_key || ''}
-                onChange={(e) => setConfigForm({...configForm, openai_api_key: e.target.value})}
+                value={configForm.openaiApiKey || ''}
+                onChange={(e) => setConfigForm({...configForm, openaiApiKey: e.target.value})}
                 placeholder="Enter your OpenAI API key"
               />
             </div>

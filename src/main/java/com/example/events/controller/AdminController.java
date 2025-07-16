@@ -5,6 +5,8 @@ import com.example.events.repository.AdminConfigRepository;
 import com.example.events.repository.EventRepository;
 import com.example.events.repository.EventSummaryRepository;
 import com.example.events.service.OpenAiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +22,7 @@ public class AdminController {
     private final EventRepository eventRepository;
     private final EventSummaryRepository summaryRepository;
     private final OpenAiService aiService;
+    private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
 
     public AdminController(AdminConfigRepository configRepository,
                            EventRepository eventRepository,
@@ -45,6 +48,9 @@ public class AdminController {
             return ResponseEntity.status(401).build();
         }
         List<AdminConfig> configs = configRepository.findAll();
+        logger.info("Get valencia event prompt: {} ", configs.get(0).getValenciaEventsPrompt());
+        logger.info("Get valencia summary event prompt: {} ", configs.get(0).getValenciaSummaryPrompt());
+        logger.info("Get valencia summary event prompt: {} ", configs.get(0).getCategories());
         if (configs.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
@@ -57,6 +63,7 @@ public class AdminController {
         if (!"Bearer admin-token".equals(token)) {
             return ResponseEntity.status(401).build();
         }
+        logger.info("PUT config:  {} configs",config);
         configRepository.deleteAll();
         configRepository.save(config);
         return ResponseEntity.ok().build();
