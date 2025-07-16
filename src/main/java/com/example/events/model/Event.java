@@ -3,6 +3,7 @@ package com.example.events.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 @Entity
 @Data
 public class Event {
@@ -10,14 +11,23 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    private String title;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "en", column = @Column(name = "title_en")),
+            @AttributeOverride(name = "es", column = @Column(name = "title_es"))
+    })
+    private LocalizedText title;
     private String date; // ISO date string
 
     @Embedded
     private Location location;
 
-    @Column(length = 500)
-    private String description;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "en", column = @Column(name = "description_en", length = 500)),
+            @AttributeOverride(name = "es", column = @Column(name = "description_es", length = 500))
+    })
+    private LocalizedText description;
     private String imageUrl;
 
     @Embedded

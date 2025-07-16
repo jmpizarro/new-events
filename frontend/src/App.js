@@ -326,7 +326,7 @@ const App = () => {
   const EventCard = ({ event }) => (
     <div className="event-card" onClick={() => setSelectedEvent(event)}>
       <div className="event-image">
-        <img src={event.imageUrl} alt={event.title} />
+        <img src={event.imageUrl} alt={event.title[language]} />
         <div className="event-date-badge">
           {new Date(event.date).toLocaleDateString('en-US', { 
             month: 'short', 
@@ -335,14 +335,14 @@ const App = () => {
         </div>
       </div>
       <div className="event-content">
-        <h3>{event.title}</h3>
+        <h3>{event.title[language]}</h3>
         <p className="event-location">
           <svg className="location-icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
           </svg>
-          {event.location.name}, {event.location.district}
+          {event.location.name[language]}, {event.location.district}
         </p>
-        <p className="event-description">{event.description}</p>
+        <p className="event-description">{event.description[language]}</p>
         <div className="event-source">
           <span>{t('source')}: {event.source.provider}</span>
         </div>
@@ -378,7 +378,7 @@ const App = () => {
               onClick={() => setSelectedEvent(event)}
             >
               <div className="event-image">
-                <img src={event.imageUrl} alt={event.title} />
+                <img src={event.imageUrl} alt={event.title[language]} />
                 <div className="event-date-badge">
                   {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
                     month: 'short', 
@@ -387,14 +387,14 @@ const App = () => {
                 </div>
               </div>
               <div className="event-content">
-                <h3>{event.title}</h3>
+                <h3>{event.title[language]}</h3>
                 <p className="event-location">
                   <svg className="location-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
-                  {event.location.name}, {event.location.district}
+                  {event.location.name[language]}, {event.location.district}
                 </p>
-                <p className="event-description">{event.description}</p>
+                <p className="event-description">{event.description[language]}</p>
                 <div className="event-source">
                   <span>{t('source')}: {event.source.provider}</span>
                 </div>
@@ -428,9 +428,9 @@ const App = () => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
-        <img src={event.imageUrl} alt={event.title} className="modal-image" />
+        <img src={event.imageUrl} alt={event.title[language]} className="modal-image" />
         <div className="modal-body">
-          <h2>{event.title}</h2>
+          <h2>{event.title[language]}</h2>
           <div className="event-details">
             <div className="detail-item">
               <strong>{t('date')}:</strong> {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
@@ -441,7 +441,7 @@ const App = () => {
               })}
             </div>
             <div className="detail-item">
-              <strong>{t('location')}:</strong> {event.location.name}
+              <strong>{t('location')}:</strong> {event.location.name[language]}
             </div>
             <div className="detail-item">
               <strong>{t('address')}:</strong> {event.location.address}
@@ -450,7 +450,7 @@ const App = () => {
               <strong>{t('district')}:</strong> {event.location.district}
             </div>
           </div>
-          <p className="event-description">{event.description}</p>
+          <p className="event-description">{event.description[language]}</p>
           <div className="event-source">
             <a href={event.source.url} target="_blank" rel="noopener noreferrer">
               {t('viewOn')} {event.source.provider}
@@ -464,10 +464,10 @@ const App = () => {
   // Admin panel component
   const AdminPanel = () => {
     const [configForm, setConfigForm] = useState(adminConfig || {});
-    const [generateForm, setGenerateForm] = useState({
-      start_date: '2025-07-16',
-      end_date: '2025-07-31'
-    });
+
+    useEffect(() => {
+      setConfigForm(adminConfig || {});
+    }, [adminConfig]);
 
     const handleConfigSubmit = (e) => {
       e.preventDefault();
@@ -476,12 +476,12 @@ const App = () => {
 
     const handleGenerateEvents = (e) => {
       e.preventDefault();
-      generateEvents(generateForm.start_date, generateForm.end_date);
+      generateEvents(configForm.startDate, configForm.endDate);
     };
 
     const handleGenerateSummary = (e) => {
       e.preventDefault();
-      generateSummary(generateForm.start_date, generateForm.end_date);
+      generateSummary(configForm.startDate, configForm.endDate);
     };
 
     return (
@@ -519,6 +519,22 @@ const App = () => {
                 onChange={(e) => setConfigForm({...configForm, categories: e.target.value.split(', ')})}
               />
             </div>
+            <div className="form-group">
+              <label>{t('startDate')}:</label>
+              <input
+                type="date"
+                value={configForm.startDate || ''}
+                onChange={(e) => setConfigForm({...configForm, startDate: e.target.value})}
+              />
+            </div>
+            <div className="form-group">
+              <label>{t('endDate')}:</label>
+              <input
+                type="date"
+                value={configForm.endDate || ''}
+                onChange={(e) => setConfigForm({...configForm, endDate: e.target.value})}
+              />
+            </div>
             <button type="submit" className="submit-btn">{t('updateConfig')}</button>
           </form>
         </div>
@@ -526,22 +542,6 @@ const App = () => {
         <div className="admin-section">
           <h3>{t('generateContent')}</h3>
           <form className="generate-form">
-            <div className="form-group">
-              <label>{t('startDate')}:</label>
-              <input
-                type="date"
-                value={generateForm.start_date}
-                onChange={(e) => setGenerateForm({...generateForm, start_date: e.target.value})}
-              />
-            </div>
-            <div className="form-group">
-              <label>{t('endDate')}:</label>
-              <input
-                type="date"
-                value={generateForm.end_date}
-                onChange={(e) => setGenerateForm({...generateForm, end_date: e.target.value})}
-              />
-            </div>
             <div className="button-group">
               <button type="button" onClick={handleGenerateEvents} className="generate-btn">
                 {t('generateEvents')}
@@ -645,11 +645,11 @@ const App = () => {
             {summary && (
               <div className="summary-section">
                 <h3>{t('thisWeek')}</h3>
-                <p>{summary.summary}</p>
+                <p>{summary.summary[language]}</p>
                 <div className="summary-meta">
-                  <span>{summary.start_date} - {summary.end_date}</span>
+                  <span>{summary.startDate} - {summary.endDate}</span>
                   <div className="event-types">
-                    {summary.event_types.map(type => (
+                    {summary.eventTypes.map(type => (
                       <span key={type} className="event-type-tag">{type}</span>
                     ))}
                   </div>
