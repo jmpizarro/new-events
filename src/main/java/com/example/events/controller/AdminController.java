@@ -51,9 +51,6 @@ public class AdminController {
             return ResponseEntity.status(401).build();
         }
         List<AdminConfig> configs = configRepository.findAll();
-        logger.info("Get valencia event prompt: {} ", configs.get(0).getValenciaEventsPrompt());
-        logger.info("Get valencia summary event prompt: {} ", configs.get(0).getValenciaSummaryPrompt());
-        logger.info("Get valencia summary event prompt: {} ", configs.get(0).getCategories());
         if (configs.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
@@ -66,7 +63,7 @@ public class AdminController {
         if (!"Bearer admin-token".equals(token)) {
             return ResponseEntity.status(401).build();
         }
-        logger.info("PUT config:  {} configs",config);
+        logger.info("PUT config:  {}",config);
         configRepository.deleteAll();
         configRepository.save(config);
         return ResponseEntity.ok().build();
@@ -109,21 +106,23 @@ public class AdminController {
         if (config == null || config.getOpenaiApiKey() == null || config.getOpenaiApiKey().isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of("detail", "OpenAI API key not configured"));
         }
-        // update config with requested dates
-        config.setStartDate(request.start_date);
-        config.setEndDate(request.end_date);
+        logger.info("config: " + config);
         configRepository.save(config);
 
         String prompt = config.getValenciaEventsPrompt()
                 .replace("{{start_date}}", config.getStartDate())
                 .replace("{{end_date}}", config.getEndDate());
+        logger.info("Prompt before calling: " + prompt);
+        
         String response = aiService.chat(prompt);
         response = extractJson(response);
+        logger.info("Response from Open IA: " + response);
         try {
             ObjectMapper mapper = new ObjectMapper();
             Event[] events = mapper.readValue(response, Event[].class);
             eventRepository.deleteAll();
             eventRepository.saveAll(List.of(events));
+            logger.info("Saving events: " + events);
             return ResponseEntity.ok(Map.of("message", "Events generated"));
         } catch (Exception e) {
             logger.error("Failed to parse events", e);

@@ -4,6 +4,8 @@ import com.example.events.model.AdminConfig;
 import com.example.events.repository.AdminConfigRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -15,6 +17,7 @@ import java.util.Collections;
 public class InitDatabase implements CommandLineRunner {
 
     private final AdminConfigRepository repo;
+    private static final Logger logger = LoggerFactory.getLogger(InitDatabase.class);
 
     public InitDatabase(AdminConfigRepository repo) {
         this.repo = repo;
@@ -32,6 +35,7 @@ public class InitDatabase implements CommandLineRunner {
             config.setOpenaiApiKey("");
             config.setValenciaEventsPrompt(node.get("valencia_events").get("instruction").asText());
             config.setValenciaSummaryPrompt(node.get("valencia_events_summary").get("instruction").asText());
+            logger.info("database init, configs: " + config);
             repo.save(config);
         }
     }
