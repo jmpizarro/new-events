@@ -77,6 +77,28 @@ public class AdminController {
         public String end_date;
     }
 
+    /**
+     * OpenAI often wraps JSON responses in a Markdown code block. This utility
+     * removes the opening and closing fences so the content can be parsed by
+     * Jackson.
+     */
+    private String extractJson(String response) {
+        if (response == null) {
+            return null;
+        }
+        String trimmed = response.trim();
+        if (trimmed.startsWith("```")) {
+            int firstNewline = trimmed.indexOf('\n');
+            if (firstNewline > -1) {
+                trimmed = trimmed.substring(firstNewline + 1);
+            }
+        }
+        if (trimmed.endsWith("```")) {
+            trimmed = trimmed.substring(0, trimmed.length() - 3);
+        }
+        return trimmed.trim();
+    }
+
     @PostMapping("/generate-events")
     public ResponseEntity<?> generateEvents(@RequestHeader("Authorization") String token,
                                             @RequestBody GenerateRequest request) {
@@ -96,6 +118,7 @@ public class AdminController {
                 .replace("{{start_date}}", config.getStartDate())
                 .replace("{{end_date}}", config.getEndDate());
         String response = aiService.chat(prompt);
+        response = extractJson(response);
         try {
             ObjectMapper mapper = new ObjectMapper();
             Event[] events = mapper.readValue(response, Event[].class);
@@ -127,6 +150,7 @@ public class AdminController {
                 .replace("{{start_date}}", config.getStartDate())
                 .replace("{{end_date}}", config.getEndDate());
         String response = aiService.chat(prompt);
+        response = extractJson(response);
         try {
             ObjectMapper mapper = new ObjectMapper();
             EventSummary summary = mapper.readValue(response, EventSummary.class);
