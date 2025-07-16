@@ -48,7 +48,6 @@ const App = () => {
       logout: 'Logout',
       configuration: 'Configuration',
       city: 'City',
-      openaiKey: 'OpenAI API Key',
       categories: 'Categories',
       updateConfig: 'Update Configuration',
       generateContent: 'Generate Content',
@@ -87,7 +86,6 @@ const App = () => {
       logout: 'Cerrar Sesión',
       configuration: 'Configuración',
       city: 'Ciudad',
-      openaiKey: 'Clave API OpenAI',
       categories: 'Categorías',
       updateConfig: 'Actualizar Configuración',
       generateContent: 'Generar Contenido',
@@ -500,15 +498,6 @@ const App = () => {
                 type="text"
                 value={configForm.city || ''}
                 onChange={(e) => setConfigForm({...configForm, city: e.target.value})}
-              />
-            </div>
-            <div className="form-group">
-              <label>{t('openaiKey')}:</label>
-              <input
-                type="password"
-                value={configForm.openaiApiKey || ''}
-                onChange={(e) => setConfigForm({...configForm, openaiApiKey: e.target.value})}
-                placeholder="Enter your OpenAI API key"
               />
             </div>
             <div className="form-group">
