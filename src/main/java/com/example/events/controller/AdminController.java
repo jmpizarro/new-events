@@ -59,11 +59,16 @@ public class AdminController {
 
     @PutMapping("/config")
     public ResponseEntity<Void> updateConfig(@RequestHeader("Authorization") String token,
-                                             @RequestBody AdminConfig config) {
+                                             @RequestBody AdminConfig updated) {
         if (!"Bearer admin-token".equals(token)) {
             return ResponseEntity.status(401).build();
         }
-        logger.info("PUT config:  {}",config);
+        logger.info("PUT config:  {}", updated);
+        AdminConfig config = configRepository.findAll().stream().findFirst().orElse(new AdminConfig());
+        config.setCity(updated.getCity());
+        config.setCategories(updated.getCategories());
+        config.setStartDate(updated.getStartDate());
+        config.setEndDate(updated.getEndDate());
         configRepository.deleteAll();
         configRepository.save(config);
         return ResponseEntity.ok().build();
@@ -103,8 +108,8 @@ public class AdminController {
             return ResponseEntity.status(401).build();
         }
         AdminConfig config = configRepository.findAll().stream().findFirst().orElse(null);
-        if (config == null || config.getOpenaiApiKey() == null || config.getOpenaiApiKey().isEmpty()) {
-            return ResponseEntity.badRequest().body(Map.of("detail", "OpenAI API key not configured"));
+        if (config == null) {
+            return ResponseEntity.badRequest().body(Map.of("detail", "Admin config not found"));
         }
         logger.info("config: " + config);
         configRepository.save(config);
@@ -137,8 +142,8 @@ public class AdminController {
             return ResponseEntity.status(401).build();
         }
         AdminConfig config = configRepository.findAll().stream().findFirst().orElse(null);
-        if (config == null || config.getOpenaiApiKey() == null || config.getOpenaiApiKey().isEmpty()) {
-            return ResponseEntity.badRequest().body(Map.of("detail", "OpenAI API key not configured"));
+        if (config == null) {
+            return ResponseEntity.badRequest().body(Map.of("detail", "Admin config not found"));
         }
         // update dates in config
         config.setStartDate(request.start_date);

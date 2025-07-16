@@ -215,15 +215,18 @@ backend:
 
   - task: "Admin Configuration - Update Config"
     implemented: true
-    working: false
+    working: true
     file: "backend/server.py"
     stuck_count: 1
     priority: "medium"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: false
           agent: "testing"
           comment: "❌ /api/admin/config PUT experiencing timeout errors during testing. Core functionality appears implemented but network/performance issues during testing."
+        - working: true
+          agent: "main"
+          comment: "Updated backend and frontend so config updates no longer include prompts or API key."
 
   - task: "Admin Configuration - Unauthorized Access"
     implemented: true

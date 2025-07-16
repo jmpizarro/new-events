@@ -19,8 +19,6 @@ public class AdminConfig {
 
     private String endDate;
 
-    private String openaiApiKey;
-
     @Column(length = 2000)
     private String valenciaEventsPrompt;
 

@@ -32,7 +32,6 @@ public class InitDatabase implements CommandLineRunner {
 
             AdminConfig config = new AdminConfig();
             config.setCategories(Collections.emptyList());
-            config.setOpenaiApiKey("");
             config.setValenciaEventsPrompt(node.get("valencia_events").get("instruction").asText());
             config.setValenciaSummaryPrompt(node.get("valencia_events_summary").get("instruction").asText());
             logger.info("database init, configs: " + config);
