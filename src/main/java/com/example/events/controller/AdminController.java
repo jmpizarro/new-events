@@ -1,10 +1,13 @@
 package com.example.events.controller;
 
 import com.example.events.model.AdminConfig;
+import com.example.events.model.Event;
+import com.example.events.model.EventSummary;
 import com.example.events.repository.AdminConfigRepository;
 import com.example.events.repository.EventRepository;
 import com.example.events.repository.EventSummaryRepository;
 import com.example.events.service.OpenAiService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -84,12 +87,25 @@ public class AdminController {
         if (config == null || config.getOpenaiApiKey() == null || config.getOpenaiApiKey().isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of("detail", "OpenAI API key not configured"));
         }
+        // update config with requested dates
+        config.setStartDate(request.start_date);
+        config.setEndDate(request.end_date);
+        configRepository.save(config);
+
         String prompt = config.getValenciaEventsPrompt()
-                .replace("{{start_date}}", request.start_date)
-                .replace("{{end_date}}", request.end_date);
+                .replace("{{start_date}}", config.getStartDate())
+                .replace("{{end_date}}", config.getEndDate());
         String response = aiService.chat(prompt);
-        // For brevity we skip JSON parsing and storing events
-        return ResponseEntity.ok(Map.of("response", response));
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            Event[] events = mapper.readValue(response, Event[].class);
+            eventRepository.deleteAll();
+            eventRepository.saveAll(List.of(events));
+            return ResponseEntity.ok(Map.of("message", "Events generated"));
+        } catch (Exception e) {
+            logger.error("Failed to parse events", e);
+            return ResponseEntity.badRequest().body(Map.of("detail", "Invalid response from AI"));
+        }
     }
 
     @PostMapping("/generate-summary")
@@ -102,10 +118,24 @@ public class AdminController {
         if (config == null || config.getOpenaiApiKey() == null || config.getOpenaiApiKey().isEmpty()) {
             return ResponseEntity.badRequest().body(Map.of("detail", "OpenAI API key not configured"));
         }
+        // update dates in config
+        config.setStartDate(request.start_date);
+        config.setEndDate(request.end_date);
+        configRepository.save(config);
+
         String prompt = config.getValenciaSummaryPrompt()
-                .replace("{{start_date}}", request.start_date)
-                .replace("{{end_date}}", request.end_date);
+                .replace("{{start_date}}", config.getStartDate())
+                .replace("{{end_date}}", config.getEndDate());
         String response = aiService.chat(prompt);
-        return ResponseEntity.ok(Map.of("response", response));
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            EventSummary summary = mapper.readValue(response, EventSummary.class);
+            summaryRepository.deleteAll();
+            summaryRepository.save(summary);
+            return ResponseEntity.ok(Map.of("message", "Summary generated"));
+        } catch (Exception e) {
+            logger.error("Failed to parse summary", e);
+            return ResponseEntity.badRequest().body(Map.of("detail", "Invalid response from AI"));
+        }
     }
 }

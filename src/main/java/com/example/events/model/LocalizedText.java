@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Embeddable
 @Data
-public class Source {
-    private String url;
-    private String provider;
+public class LocalizedText {
+    private String en;
+    private String es;
 }

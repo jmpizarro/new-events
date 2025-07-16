@@ -15,6 +15,10 @@ public class AdminConfig {
     @ElementCollection
     private java.util.List<String> categories;
 
+    private String startDate;
+
+    private String endDate;
+
     private String openaiApiKey;
 
     @Column(length = 2000)
