@@ -324,7 +324,14 @@ const App = () => {
   const EventCard = ({ event }) => (
     <div className="event-card" onClick={() => setSelectedEvent(event)}>
       <div className="event-image">
-        <img src={event.imageUrl} alt={event.title[language]} />
+        <img
+          src={event.imageUrl}
+          alt={event.title[language]}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = '/images/event.png';
+          }}
+        />
         <div className="event-date-badge">
           {new Date(event.date).toLocaleDateString('en-US', { 
             month: 'short', 
@@ -376,7 +383,14 @@ const App = () => {
               onClick={() => setSelectedEvent(event)}
             >
               <div className="event-image">
-                <img src={event.imageUrl} alt={event.title[language]} />
+                <img
+                  src={event.imageUrl}
+                  alt={event.title[language]}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/event.png';
+                  }}
+                />
                 <div className="event-date-badge">
                   {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
                     month: 'short', 
@@ -426,7 +440,15 @@ const App = () => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
-        <img src={event.imageUrl} alt={event.title[language]} className="modal-image" />
+        <img
+          src={event.imageUrl}
+          alt={event.title[language]}
+          className="modal-image"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = '/images/event.png';
+          }}
+        />
         <div className="modal-body">
           <h2>{event.title[language]}</h2>
           <div className="event-details">
@@ -625,9 +647,6 @@ const App = () => {
               <div className="hero-content">
                 <h2>{t('discoverTitle')}</h2>
                 <p>{t('discoverSubtitle')}</p>
-              </div>
-              <div className="hero-image">
-                <img src="https://images.unsplash.com/photo-1658329717628-4c051a4c6820?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxWYWxlbmNpYSUyMGNpdHlzY2FwZXxlbnwwfHx8Ymx1ZXwxNzUyNDMwMDU0fDA&ixlib=rb-4.1.0&q=85" alt="Valencia cityscape" />
               </div>
             </div>
 
