@@ -62,6 +62,10 @@ body {
 .app {
   min-height: 100vh;
   background-color: var(--bg-primary);
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--text-primary);
   transition: var(--transition-medium);
 }
