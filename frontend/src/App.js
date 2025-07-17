@@ -57,7 +57,12 @@ const App = () => {
       generateSummary: 'Generate Summary',
       adminLogin: 'Admin Login',
       username: 'Username',
-      password: 'Password'
+      password: 'Password',
+      contact: 'Contact',
+      name: 'Name',
+      email: 'Email',
+      message: 'Message',
+      send: 'Send'
     },
     es: {
       title: 'Eventos Valencia',
@@ -95,7 +100,12 @@ const App = () => {
       generateSummary: 'Generar Resumen',
       adminLogin: 'Acceso de Administrador',
       username: 'Usuario',
-      password: 'Contraseña'
+      password: 'Contraseña',
+      contact: 'Contacto',
+      name: 'Nombre',
+      email: 'Correo',
+      message: 'Mensaje',
+      send: 'Enviar'
     }
   };
 
@@ -597,6 +607,59 @@ const App = () => {
     </div>
   );
 
+  const ContactForm = () => {
+    const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      await fetch(`${API_BASE_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      setForm({ name: '', email: '', message: '' });
+      alert('Message sent');
+    };
+
+    return (
+      <div className="admin-panel">
+        <div className="admin-header">
+          <h2>{t('contact')}</h2>
+        </div>
+        <form onSubmit={handleSubmit} className="config-form">
+          <div className="form-group">
+            <label>{t('name')}</label>
+            <input
+              type="text"
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>{t('email')}</label>
+            <input
+              type="email"
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>{t('message')}</label>
+            <textarea
+              rows="4"
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              required
+            />
+          </div>
+          <button type="submit" className="submit-btn">{t('send')}</button>
+        </form>
+      </div>
+    );
+  };
+
   // Main render
   return (
     <div className={`app ${darkMode ? 'dark' : ''}`}>
@@ -628,6 +691,12 @@ const App = () => {
                 onClick={() => setCurrentView('calendar')}
               >
                 {t('calendar')}
+              </button>
+              <button
+                className={`nav-item ${currentView === 'contact' ? 'active' : ''}`}
+                onClick={() => setCurrentView('contact')}
+              >
+                {t('contact')}
               </button>
               <button
                 className={`nav-item ${currentView === 'admin' ? 'active' : ''}`}
@@ -754,14 +823,28 @@ const App = () => {
         {currentView === 'admin' && (
           isAdmin ? <AdminPanel /> : <LoginForm />
         )}
+
+        {currentView === 'contact' && (
+          <ContactForm />
+        )}
       </main>
 
       {selectedEvent && (
-        <EventDetailModal 
-          event={selectedEvent} 
-          onClose={() => setSelectedEvent(null)} 
+        <EventDetailModal
+          event={selectedEvent}
+          onClose={() => setSelectedEvent(null)}
         />
       )}
+
+      <footer className="app-footer">
+        <div className="footer-content">
+          <p>&copy; {new Date().getFullYear()} Valencia Events</p>
+          <div className="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

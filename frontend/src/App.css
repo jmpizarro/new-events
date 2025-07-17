@@ -1086,7 +1086,36 @@ body {
 
 /* Smooth transitions for theme changes */
 * {
-  transition: background-color var(--transition-medium), 
-              color var(--transition-medium), 
+  transition: background-color var(--transition-medium),
+              color var(--transition-medium),
               border-color var(--transition-medium);
+}
+
+/* Footer styles */
+.app-footer {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.footer-links a {
+  margin-left: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
