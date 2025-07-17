@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg-primary);
-  background-image: url('/images/background.png');
+  background-image: url('../public/images/valencia.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
