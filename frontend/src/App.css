@@ -71,12 +71,18 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg-primary);
-  background-image: url('../public/images/valencia.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+  url('../public/images/valencia.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: var(--text-primary);
   transition: var(--transition-medium);
+}
+
+.app.dark {
+  background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.6)),
+  url('../public/images/valencia.jpg');
 }
 
 .app::before {
