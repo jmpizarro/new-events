@@ -7,6 +7,7 @@ import com.example.events.repository.AdminConfigRepository;
 import com.example.events.repository.EventRepository;
 import com.example.events.repository.EventSummaryRepository;
 import com.example.events.service.OpenAiService;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,6 +81,35 @@ public class AdminController {
     }
 
     /**
+     * Extracts the assistant message text from the JSON returned by the
+     * OpenAI responses API. If the payload does not match the expected
+     * structure, {@code null} is returned.
+     */
+    private String getResponseText(String json) {
+        if (json == null || json.isBlank()) {
+            return null;
+        }
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode root = mapper.readTree(json);
+            JsonNode output = root.path("output");
+            if (output.isArray()) {
+                for (JsonNode node : output) {
+                    if ("message".equals(node.path("type").asText())) {
+                        JsonNode content = node.path("content");
+                        if (content.isArray() && !content.isEmpty()) {
+                            return content.get(0).path("text").asText();
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            logger.error("Failed to extract response text", e);
+        }
+        return null;
+    }
+
+    /**
      * OpenAI often wraps JSON responses in a Markdown code block. This utility
      * removes the opening and closing fences so the content can be parsed by
      * Jackson.
@@ -120,6 +150,10 @@ public class AdminController {
         logger.info("Prompt before calling: " + prompt);
         
         String response = aiService.chat(prompt);
+        String rawText = getResponseText(response);
+        if (rawText != null) {
+            response = rawText;
+        }
         response = extractJson(response);
         logger.info("Response from Open IA: " + response);
         try {
@@ -154,6 +188,10 @@ public class AdminController {
                 .replace("{{start_date}}", config.getStartDate())
                 .replace("{{end_date}}", config.getEndDate());
         String response = aiService.chat(prompt);
+        String rawText = getResponseText(response);
+        if (rawText != null) {
+            response = rawText;
+        }
         response = extractJson(response);
         try {
             ObjectMapper mapper = new ObjectMapper();
