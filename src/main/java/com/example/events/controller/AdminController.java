@@ -9,6 +9,7 @@ import com.example.events.repository.EventSummaryRepository;
 import com.example.events.service.OpenAiService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -195,6 +196,7 @@ public class AdminController {
         response = extractJson(response);
         try {
             ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             EventSummary summary = mapper.readValue(response, EventSummary.class);
             summaryRepository.deleteAll();
             summaryRepository.save(summary);
