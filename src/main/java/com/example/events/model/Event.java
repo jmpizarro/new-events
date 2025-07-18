@@ -30,6 +30,8 @@ public class Event {
     private LocalizedText description;
     private String imageUrl;
 
+    private String price;
+
     @Embedded
     private Source source;
 }

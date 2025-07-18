@@ -43,6 +43,7 @@ const App = () => {
       location: 'Location',
       address: 'Address',
       district: 'District',
+      price: 'Price',
       viewOn: 'View on',
       adminPanel: 'Admin Panel',
       logout: 'Logout',
@@ -86,6 +87,7 @@ const App = () => {
       location: 'Ubicación',
       address: 'Dirección',
       district: 'Distrito',
+      price: 'Precio',
       viewOn: 'Ver en',
       adminPanel: 'Panel de Administración',
       logout: 'Cerrar Sesión',
@@ -358,6 +360,11 @@ const App = () => {
           {event.location.name[language]}, {event.location.district}
         </p>
         <p className="event-description">{event.description[language]}</p>
+        {event.price && (
+          <div className="event-price">
+            <span>{t('price')}: {event.price}</span>
+          </div>
+        )}
         <div className="event-source">
           <span>{t('source')}: {event.source.provider}</span>
         </div>
@@ -417,6 +424,11 @@ const App = () => {
                   {event.location.name[language]}, {event.location.district}
                 </p>
                 <p className="event-description">{event.description[language]}</p>
+                {event.price && (
+                  <div className="event-price">
+                    <span>{t('price')}: {event.price}</span>
+                  </div>
+                )}
                 <div className="event-source">
                   <span>{t('source')}: {event.source.provider}</span>
                 </div>
@@ -479,6 +491,11 @@ const App = () => {
             <div className="detail-item">
               <strong>{t('district')}:</strong> {event.location.district}
             </div>
+            {event.price && (
+              <div className="detail-item">
+                <strong>{t('price')}:</strong> {event.price}
+              </div>
+            )}
           </div>
           <p className="event-description">{event.description[language]}</p>
           <div className="event-source">
