@@ -366,6 +366,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Enlarged calendar layout, moved day events below calendar and widened contact form"
+        - working: true
+          agent: "main"
+          comment: "Fixed calendar grid overflow so right edge no longer gets cut off"
 
   - task: "Contact Form Layout"
     implemented: true
@@ -421,3 +424,5 @@ agent_communication:
       message: "Added flex layout for persistent footer and revamped calendar UI with glass-morphism style."
     - agent: "main"
       message: "Widened contact form and enlarged calendar layout; events now display below the calendar"
+    - agent: "main"
+      message: "Fixed calendar overflow on narrow screens so right edge is fully visible"
