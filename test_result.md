@@ -378,6 +378,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Expanded contact form width to match summary section"
+        - working: true
+          agent: "main"
+          comment: "Increased contact form max-width to 1200px per user feedback"
 
   - task: "Display Event Price"
     implemented: true
