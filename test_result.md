@@ -303,6 +303,18 @@ backend:
           agent: "testing"
           comment: "Minor: Invalid event IDs return 500 instead of 404, but request is properly handled without system failure"
 
+  - task: "Price Field for Events"
+    implemented: true
+    working: true
+    file: "src/main/java/com/example/events/model/Event.java"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Added price field to Event model and prompt instructions"
+
 frontend:
   - task: "Frontend Testing"
     implemented: false
@@ -351,6 +363,18 @@ frontend:
         - working: true
           agent: "main"
           comment: "Redesigned calendar with glass-morphism styling, gradients and hover interactions"
+
+  - task: "Display Event Price"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Added price field display in event cards and modal"
 
 metadata:
   created_by: "testing_agent"

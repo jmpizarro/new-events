@@ -463,6 +463,11 @@ body {
   margin-top: auto;
 }
 
+.event-card-deck .event-price {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
 /* Deck navigation */
 .deck-navigation {
   display: flex;
@@ -594,6 +599,12 @@ body {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+.event-price {
+  color: var(--text-secondary);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .event-source {
