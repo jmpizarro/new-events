@@ -67,6 +67,8 @@ body {
 
 .app {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg-primary);
   background-image: url('/images/background.png');
@@ -178,6 +180,7 @@ body {
 
 /* Main content */
 .app-main {
+  flex: 1 0 auto;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -607,18 +610,25 @@ body {
 }
 
 .calendar-container {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.app.dark .calendar-container {
+  background: rgba(55, 65, 81, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .calendar-header {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   padding: 1rem;
   text-align: center;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .calendar-header h2 {
@@ -629,15 +639,24 @@ body {
 .calendar-weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: var(--bg-secondary);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+.app.dark .calendar-weekdays {
+  background: rgba(55, 65, 81, 0.5);
 }
 
 .weekday {
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: center;
   font-weight: 600;
   color: var(--text-secondary);
   border-right: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+.app.dark .weekday {
+  background: rgba(55, 65, 81, 0.4);
 }
 
 .weekday:last-child {
@@ -647,22 +666,30 @@ body {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .calendar-day {
   aspect-ratio: 1;
-  border: 1px solid var(--border-color);
+  border: none;
   padding: 0.5rem;
   position: relative;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: transform 0.2s, background-color 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
 }
 
 .calendar-day:hover {
-  background-color: var(--bg-secondary);
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
 .calendar-day.empty {
@@ -671,12 +698,14 @@ body {
 }
 
 .calendar-day.today {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: white;
+  box-shadow: 0 4px 10px rgba(30, 64, 175, 0.3);
 }
 
 .calendar-day.has-events {
-  background-color: rgba(30, 64, 175, 0.1);
+  background-color: rgba(30, 64, 175, 0.15);
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.2) inset;
 }
 
 .day-number {
@@ -705,15 +734,20 @@ body {
 }
 
 .selected-date-events {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius);
   padding: 1.5rem;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+}
+.app.dark .selected-date-events {
+  background: rgba(55, 65, 81, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .selected-date-events h3 {
@@ -972,6 +1006,7 @@ body {
   }
 
   .app-main {
+    flex: 1 0 auto;
     padding: 1rem;
   }
 
