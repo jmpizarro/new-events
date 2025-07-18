@@ -34,4 +34,6 @@ public class Event {
 
     @Embedded
     private Source source;
+    
+    private String price;
 }
