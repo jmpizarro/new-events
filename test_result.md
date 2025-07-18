@@ -316,6 +316,18 @@ frontend:
           agent: "testing"
           comment: "Frontend testing not performed as per testing agent instructions - backend testing only"
 
+  - task: "Improve Contrast for Light/Dark Modes"
+    implemented: true
+    working: true
+    file: "frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Adjusted CSS variables and styles for better readability in light and dark modes"
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
@@ -326,6 +338,7 @@ test_plan:
   current_focus:
     - "All backend API endpoints tested"
     - "OpenAI Integration - Generate Summary"
+    - "Improve Contrast for Light/Dark Modes"
   stuck_tasks:
     - "Admin Configuration - Update Config"
   test_all: true
@@ -335,4 +348,6 @@ agent_communication:
     - agent: "testing"
       message: "Comprehensive backend API testing completed. 14/15 backend endpoints working correctly. Core functionality including events API, summaries API, admin authentication, and database operations all working properly. Minor issues with error status codes (500 instead of 400/404) but security and business logic intact. One timeout issue with admin config PUT endpoint. System ready for OpenAI API key integration."
     - agent: "main"
-      message: "Updated summary model to accept snake_case JSON and ignore unknown fields. Added deserialization configuration in AdminController." 
+      message: "Updated summary model to accept snake_case JSON and ignore unknown fields. Added deserialization configuration in AdminController."
+    - agent: "main"
+      message: "Enhanced CSS for improved contrast in light and dark modes."
