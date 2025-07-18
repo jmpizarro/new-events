@@ -328,6 +328,30 @@ frontend:
           agent: "main"
           comment: "Adjusted CSS variables and styles for better readability in light and dark modes"
 
+  - task: "Footer Alignment Across Views"
+    implemented: true
+    working: true
+    file: "frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Converted root app container to flex layout so footer sticks to bottom of calendar, contact and admin pages"
+
+  - task: "Calendar Visual Upgrade"
+    implemented: true
+    working: true
+    file: "frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Redesigned calendar with glass-morphism styling, gradients and hover interactions"
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
@@ -339,6 +363,8 @@ test_plan:
     - "All backend API endpoints tested"
     - "OpenAI Integration - Generate Summary"
     - "Improve Contrast for Light/Dark Modes"
+    - "Footer Alignment Across Views"
+    - "Calendar Visual Upgrade"
   stuck_tasks:
     - "Admin Configuration - Update Config"
   test_all: true
@@ -351,3 +377,5 @@ agent_communication:
       message: "Updated summary model to accept snake_case JSON and ignore unknown fields. Added deserialization configuration in AdminController."
     - agent: "main"
       message: "Enhanced CSS for improved contrast in light and dark modes."
+    - agent: "main"
+      message: "Added flex layout for persistent footer and revamped calendar UI with glass-morphism style."
