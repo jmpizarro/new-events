@@ -622,7 +622,7 @@ const App = () => {
     };
 
     return (
-      <div className="admin-panel">
+      <div className="admin-panel contact-panel">
         <div className="admin-header">
           <h2>{t('contact')}</h2>
         </div>

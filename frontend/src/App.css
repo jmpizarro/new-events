@@ -603,10 +603,10 @@ body {
 
 /* Calendar styles */
 .calendar-view {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  align-items: start;
+  align-items: center;
 }
 
 .calendar-container {
@@ -616,6 +616,9 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12px);
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .app.dark .calendar-container {
@@ -632,7 +635,7 @@ body {
 }
 
 .calendar-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
 }
 
@@ -666,14 +669,15 @@ body {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .calendar-day {
   aspect-ratio: 1;
   border: none;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
   position: relative;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
@@ -738,12 +742,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius);
   padding: 1.5rem;
+  margin-top: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  width: 100%;
 }
 .app.dark .selected-date-events {
   background: rgba(55, 65, 81, 0.5);
@@ -853,6 +859,11 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.contact-panel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .admin-header {
   display: flex;
   justify-content: space-between;
@@ -912,6 +923,7 @@ body {
 
 .form-group input,
 .form-group textarea {
+  width: 100%;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
