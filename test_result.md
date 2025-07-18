@@ -363,6 +363,21 @@ frontend:
         - working: true
           agent: "main"
           comment: "Redesigned calendar with glass-morphism styling, gradients and hover interactions"
+        - working: true
+          agent: "main"
+          comment: "Enlarged calendar layout, moved day events below calendar and widened contact form"
+
+  - task: "Contact Form Layout"
+    implemented: true
+    working: true
+    file: "frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Expanded contact form width to match summary section"
 
   - task: "Display Event Price"
     implemented: true
@@ -389,6 +404,7 @@ test_plan:
     - "Improve Contrast for Light/Dark Modes"
     - "Footer Alignment Across Views"
     - "Calendar Visual Upgrade"
+    - "Contact Form Layout"
   stuck_tasks:
     - "Admin Configuration - Update Config"
   test_all: true
@@ -403,3 +419,5 @@ agent_communication:
       message: "Enhanced CSS for improved contrast in light and dark modes."
     - agent: "main"
       message: "Added flex layout for persistent footer and revamped calendar UI with glass-morphism style."
+    - agent: "main"
+      message: "Widened contact form and enlarged calendar layout; events now display below the calendar"
