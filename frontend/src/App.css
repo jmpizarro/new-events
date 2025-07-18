@@ -652,7 +652,7 @@ body {
 
 .calendar-weekdays {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(6px);
   width: 100%;
@@ -681,7 +681,7 @@ body {
 
 .calendar-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 1rem;
   padding: 1rem;
   width: 100%;
