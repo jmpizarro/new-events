@@ -369,6 +369,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Fixed calendar grid overflow so right edge no longer gets cut off"
+        - working: true
+          agent: "main"
+          comment: "Adjusted grid to use minmax columns so events don't clip the calendar edge"
 
   - task: "Contact Form Layout"
     implemented: true
@@ -429,3 +432,5 @@ agent_communication:
       message: "Widened contact form and enlarged calendar layout; events now display below the calendar"
     - agent: "main"
       message: "Fixed calendar overflow on narrow screens so right edge is fully visible"
+    - agent: "main"
+      message: "Updated calendar grid columns with minmax to prevent clipping when events are shown"
