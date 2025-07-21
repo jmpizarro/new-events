@@ -150,7 +150,8 @@ public class AdminController {
                 .replace("{{end_date}}", config.getEndDate());
         logger.info("Prompt before calling: " + prompt);
         
-        String response = aiService.chat(prompt);
+        //String response = aiService.chat("What are the news for today 17/07/2025?");
+        String response = aiService.webSearch(prompt);
         String rawText = getResponseText(response);
         if (rawText != null) {
             response = rawText;
@@ -188,12 +189,13 @@ public class AdminController {
         String prompt = config.getValenciaSummaryPrompt()
                 .replace("{{start_date}}", config.getStartDate())
                 .replace("{{end_date}}", config.getEndDate());
-        String response = aiService.chat(prompt);
+        String response = aiService.webSearch(prompt);
         String rawText = getResponseText(response);
         if (rawText != null) {
             response = rawText;
         }
         response = extractJson(response);
+        logger.info("response summary: " + response);
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

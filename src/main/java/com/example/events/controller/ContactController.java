@@ -1,3 +1,4 @@
+/*
 package com.example.events.controller;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -35,3 +36,4 @@ public class ContactController {
         return ResponseEntity.ok().build();
     }
 }
+*/

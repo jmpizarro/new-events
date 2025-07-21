@@ -19,9 +19,9 @@ public class AdminConfig {
 
     private String endDate;
 
-    @Column(length = 2000)
+    @Column(length = 4000)
     private String valenciaEventsPrompt;
 
-    @Column(length = 2000)
+    @Column(length = 4000)
     private String valenciaSummaryPrompt;
 }
