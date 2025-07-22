@@ -1,0 +1,2402 @@
+[
+  {
+    "title": {
+      "en": "Opening Show \"Piano Sky\" + Fireworks",
+      "es": "Espectáculo Inaugural \"Piano Sky\" + Fuegos Artificiales"
+    },
+    "date": "2025-07-01",
+    "location": {
+      "name": {
+        "en": "Town Hall Square",
+        "es": "Plaza del Ayuntamiento"
+      },
+      "address": "Plaça de l'Ajuntament, 1",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "A spectacular aerial piano concert 4.5 meters high with live music, dancers, lights, and a fireworks finale to kick off Valencia’s Great Fair.",
+      "es": "Un espectacular concierto de piano aéreo a 4,5 metros de altura con música en vivo, bailarines, luces y un final de fuegos artificiales para inaugurar la Gran Feria de València."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/17334624/20250627+Gran+Feria+de+julio+Full+HD.jpg",
+    "source": {
+      "url": "https://www.valencia.es/cas/actualidad/-/content/inicio-gran-fira-val%C3%A8ncia-2025.-concierto-inaugural",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Sole Giménez & Juan Valderrama Concert",
+      "es": "Concierto de Sole Giménez y Juan Valderrama"
+    },
+    "date": "2025-07-01",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Enjoy a live performance by acclaimed Spanish vocalists Sole Giménez and Juan Valderrama to launch the July Fair’s Viveros Concert series.",
+      "es": "Disfruta de la actuación en vivo de los aclamados vocalistas españoles Sole Giménez y Juan Valderrama para inaugurar el ciclo de Conciertos de Viveros de la Feria de Julio."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.valencia.es/cas/actualidad/-/content/inicio-gran-fira-val%C3%A8ncia-2025.-concierto-inaugural",
+      "provider": "Valencia City Council"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Sunset Boat Trip in Albufera Natural Park",
+      "es": "Puesta de sol en la Albufera (paseo en barca)"
+    },
+    "date": "2025-07-01",
+    "location": {
+      "name": {
+        "en": "Gola de Pujol Jetty (Embarcadero)",
+        "es": "Embarcadero de la Gola de Pujol"
+      },
+      "address": "Carretera del Palmar, s/n",
+      "district": "Pobles del Sud"
+    },
+    "description": {
+      "en": "Take a free shuttle from Valencia to the Albufera Natural Park and enjoy a tranquil boat ride to watch the sunset over the lagoon.",
+      "es": "Toma un autobús lanzadera gratuito desde Valencia hasta el Parque Natural de la Albufera y disfruta de un tranquilo paseo en barca para contemplar la puesta de sol sobre la laguna."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Avishai Cohen Trio – Jazz Festival Concert",
+      "es": "Avishai Cohen Trío – Concierto del Festival de Jazz"
+    },
+    "date": "2025-07-02",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Sala Iturbi)",
+        "es": "Palau de la Música (Sala Iturbi)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "World-renowned bassist Avishai Cohen and his trio perform as part of the Valencia Jazz Festival, filling the concert hall with contemporary jazz melodies.",
+      "es": "El aclamado contrabajista Avishai Cohen y su trío actúan en el Festival de Jazz de Valencia, llenando la sala de conciertos con melodías de jazz contemporáneo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/valencia-jazz-festival",
+      "provider": "Visit Valencia"
+    },
+    "price": "€15"
+  },
+  {
+    "title": {
+      "en": "Broadway Kids Musical Show",
+      "es": "Espectáculo musical \"Broadway Kids\""
+    },
+    "date": "2025-07-02",
+    "location": {
+      "name": {
+        "en": "Palau Gardens South Pavilion",
+        "es": "Pabellón Sur de Jardines del Palau"
+      },
+      "address": "Jardines del Palau, s/n",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "A fun, family-friendly musical revue featuring children singing and dancing to Broadway hits – part of the July Fair’s kids program.",
+      "es": "Un divertido espectáculo musical familiar con niños cantando y bailando éxitos de Broadway, parte de la programación infantil de la Feria de Julio."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Rafa Alarcón Comedy Monologue",
+      "es": "Monólogo de Rafa Alarcón"
+    },
+    "date": "2025-07-02",
+    "location": {
+      "name": {
+        "en": "Patronat Park, Benifaraig",
+        "es": "Parque del Patronat, Benifaraig"
+      },
+      "address": "Carrer Major de Benifaraig, 1",
+      "district": "Pobles del Nord"
+    },
+    "description": {
+      "en": "Valencian comedian Rafa Alarcón presents an open-air stand-up comedy show, bringing laughter to the Benifaraig neighborhood as part of the summer fair events.",
+      "es": "El humorista valenciano Rafa Alarcón presenta un monólogo al aire libre, llevando risas al barrio de Benifaraig como parte de los eventos veraniegos de la feria."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Caravan Palace + Guest Concert",
+      "es": "Concierto de Caravan Palace + artista invitado"
+    },
+    "date": "2025-07-03",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "The French electro-swing band Caravan Palace lights up the Viveros stage with an energetic live show, joined by a special guest opener.",
+      "es": "La banda francesa de electro-swing Caravan Palace enciende el escenario de Viveros con un enérgico show en vivo, junto a un artista invitado de apertura."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/conciertos-de-viveros-gran-feria-de-valencia-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Eliane Elias – Jazz Piano Concert",
+      "es": "Eliane Elias – Concierto de piano jazz"
+    },
+    "date": "2025-07-03",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Sala Iturbi)",
+        "es": "Palau de la Música (Sala Iturbi)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "Brazilian jazz pianist Eliane Elias brings her Grammy-winning talent to Valencia, blending bossa nova and jazz standards in an intimate concert setting.",
+      "es": "La pianista de jazz brasileña Eliane Elias despliega su talento ganador del Grammy en Valencia, fusionando bossa nova y estándares de jazz en un concierto íntimo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/valencia-jazz-festival",
+      "provider": "Visit Valencia"
+    },
+    "price": "€20"
+  },
+  {
+    "title": {
+      "en": "\"The Adventures of the Globetrotters\" Children’s Theater",
+      "es": "Teatro infantil \"Las aventuras de los trotamundos\""
+    },
+    "date": "2025-07-03",
+    "location": {
+      "name": {
+        "en": "Plaza de Roma, Nou Moles",
+        "es": "Plaza de Roma, Nou Moles"
+      },
+      "address": "Plaça de Roma, s/n",
+      "district": "L'Olivereta"
+    },
+    "description": {
+      "en": "A fun interactive storytelling show for kids, following globetrotting characters on wild adventures. Families can enjoy this free performance in the neighborhood square.",
+      "es": "Un divertido espectáculo de cuentacuentos interactivo para niños, que sigue a personajes trotamundos en aventuras emocionantes. Las familias pueden disfrutar de esta función gratuita en la plaza del barrio."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Los Secretos + De Rancho Concert",
+      "es": "Concierto de Los Secretos + De Rancho"
+    },
+    "date": "2025-07-04",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens Open-Air Stage",
+        "es": "Escenario al aire libre de Jardines de Viveros"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Legendary Spanish pop-rock band Los Secretos take the stage, with local group De Rancho opening the night, for an evening of nostalgia and great music under the stars.",
+      "es": "La legendaria banda española de pop-rock Los Secretos toma el escenario, con el grupo local De Rancho abriendo la noche, para una velada de nostalgia y buena música bajo las estrellas."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Night Pool Party at Parque del Oeste",
+      "es": "Fiesta nocturna en la Piscina del Parque del Oeste"
+    },
+    "date": "2025-07-04",
+    "location": {
+      "name": {
+        "en": "Parque del Oeste Outdoor Pool",
+        "es": "Piscina al aire libre del Parque del Oeste"
+      },
+      "address": "Carrer del Músic Ayllón, s/n",
+      "district": "L'Olivereta"
+    },
+    "description": {
+      "en": "Cool off at Valencia’s West Park Pool with extended night hours, music, and themed entertainment every Friday. Dance at the “Welcome Summer” party while swimming under the stars.",
+      "es": "Refrescate en la Piscina del Parque del Oeste con horario nocturno extendido, música y animación temática cada viernes. Baila en la fiesta “Bienvenido Verano” mientras nadas bajo las estrellas."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "€3"
+  },
+  {
+    "title": {
+      "en": "Open-Air Cinema at La Rambleta",
+      "es": "Cine de verano al aire libre en La Rambleta"
+    },
+    "date": "2025-07-04",
+    "location": {
+      "name": {
+        "en": "La Rambleta Terrace",
+        "es": "Terraza de La Rambleta"
+      },
+      "address": "Bulevar Sur, esq. C/ Pío IX",
+      "district": "Jesús"
+    },
+    "description": {
+      "en": "Enjoy a summer movie night on La Rambleta’s rooftop terrace. Classic and family films start at 22:00 – grab a drink and watch a screening (like \"The Princess Bride\") under the night sky.",
+      "es": "Disfruta de una noche de cine de verano en la terraza de La Rambleta. Películas clásicas y familiares comienzan a las 22:00 – toma una bebida y mira una proyección (como \"La princesa prometida\") bajo el cielo nocturno."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.idealista.com/en/news/lifestyle-in-spain/2025/07/02/851302-things-to-do-in-valencia-in-july-2025-events-activities-and-experiences",
+      "provider": "Idealista News"
+    },
+    "price": "€7 (includes drink)"
+  },
+  {
+    "title": {
+      "en": "Rigoberta Bandini – Live in Concert",
+      "es": "Rigoberta Bandini – Concierto en vivo"
+    },
+    "date": "2025-07-05",
+    "location": {
+      "name": {
+        "en": "Ciutat de València Stadium",
+        "es": "Estadio Ciutat de València"
+      },
+      "address": "Carrer de Sant Vicent de Paül, 44",
+      "district": "Rascanya"
+    },
+    "description": {
+      "en": "Catalan pop sensation Rigoberta Bandini brings her “Jesucrista Superstar” tour to Valencia’s football stadium. Expect an electric atmosphere as she performs her hits alongside thousands of fans.",
+      "es": "La sensación pop catalana Rigoberta Bandini trae su gira “Jesucrista Superstar” al estadio de fútbol de Valencia. Se vivirá un ambiente eléctrico mientras interpreta sus éxitos ante miles de fans."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.rigobertabandini.es/tour",
+      "provider": "Rigoberta Bandini Official"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "Hakuna Group Music Concert",
+      "es": "Concierto de Hakuna Group Music"
+    },
+    "date": "2025-07-05",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Hakuna Group Music, known for their uplifting spiritual pop-rock, performs an open-air concert as part of the July Fair’s lineup, delivering messages of hope through music.",
+      "es": "Hakuna Group Music, conocidos por su pop-rock espiritual y motivador, ofrecen un concierto al aire libre dentro de la programación de la Feria de Julio, transmitiendo mensajes de esperanza a través de su música."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Homenaje a la Ruta 90’s & 2000’s Festival",
+      "es": "Festival Homenaje a la Ruta 90’s & 2000’s"
+    },
+    "date": "2025-07-05",
+    "location": {
+      "name": {
+        "en": "La Marina Sur – Festival Zone",
+        "es": "Marina Sur – Zona de festivales"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "A massive throwback party celebrating Valencia’s famous 90s \"Ruta del Bakalao\" club scene. Dance the night away by the sea with classic DJs, spectacular staging, and thousands of fans in nostalgic attire.",
+      "es": "Una gran fiesta retro que celebra la famosa \"Ruta del Bakalao\" valenciana de los 90. Baila toda la noche junto al mar con DJs clásicos, un montaje espectacular y miles de fanáticos con atuendos nostálgicos."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "€25"
+  },
+  {
+    "title": {
+      "en": "Midnight Fireworks – Fira de Juliol",
+      "es": "Fuegos artificiales de medianoche – Fira de Juliol"
+    },
+    "date": "2025-07-05",
+    "location": {
+      "name": {
+        "en": "Town Hall Square & Skyline",
+        "es": "Plaza del Ayuntamiento y alrededores"
+      },
+      "address": "Plaça de l'Ajuntament, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "As the clock strikes 23:59, a grand fireworks display by Pirotecnia Caballer lights up downtown Valencia. This first Saturday-night “Focs de la Fira” fills the sky with color and kicks off July’s pyrotechnic tradition.",
+      "es": "Al dar las 23:59, un gran espectáculo pirotécnico de Pirotecnia Caballer ilumina el centro de Valencia. Este primer \"Focs de la Fira\" de sábado por la noche llena el cielo de color y da inicio a la tradición pirotécnica de julio."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/gran-feria-de-valencia-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Rosario Flores + Julia Martínez Concert",
+      "es": "Concierto de Rosario Flores + Julia Martínez"
+    },
+    "date": "2025-07-06",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens Concert Zone",
+        "es": "Zona de conciertos de Jardines de Viveros"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Flamenco-pop icon Rosario Flores headlines an outdoor concert with emerging artist Julia Martínez. The charismatic singer will perform her greatest hits and get the crowd dancing on a warm summer night.",
+      "es": "La icónica artista de flamenco-pop Rosario Flores encabeza un concierto al aire libre junto a la joven cantante Julia Martínez. La carismática Rosario interpretará sus mayores éxitos para hacer bailar al público en una cálida noche de verano."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Family Weekend at Palau de la Música",
+      "es": "Fin de semana familiar en el Palau de la Música"
+    },
+    "date": "2025-07-06",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Exterior Gardens)",
+        "es": "Palau de la Música (Jardines exteriores)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "The Palau de la Música hosts two days of free family activities. On Sunday, enjoy interactive workshops, musical games, and open-air performances designed for kids and parents to share music and fun together.",
+      "es": "El Palau de la Música organiza dos jornadas de actividades familiares gratuitas. El domingo, disfruta de talleres interactivos, juegos musicales y espectáculos al aire libre pensados para que niños y padres compartan música y diversión juntos."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/actualidad/-/content/concejal%C3%ADa-familia-feria-julio-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "SM La Reina Trophy – Sailing Cup Final",
+      "es": "Trofeo SM La Reina – Final de regata"
+    },
+    "date": "2025-07-06",
+    "location": {
+      "name": {
+        "en": "Marina Real Juan Carlos I",
+        "es": "Marina Real Juan Carlos I"
+      },
+      "address": "Moll de la Marina, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Spain’s top sailing teams compete in the final races of the 2025 SM La Reina Trophy. From the docks of Valencia’s Marina, spectators can watch sleek racing yachts battle for victory on the Mediterranean waters.",
+      "es": "Los mejores equipos de vela de España compiten en las regatas finales del Trofeo SM La Reina 2025. Desde los muelles de la Marina de Valencia, los espectadores pueden contemplar cómo los elegantes veleros de regata luchan por la victoria en aguas del Mediterráneo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.fvcv.es/regata-sm-la-reina-2025",
+      "provider": "Valencia Royal Nautical Club"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "\"De muerto presente\" Theatrical Performance",
+      "es": "Obra teatral \"De muerto presente\""
+    },
+    "date": "2025-07-06",
+    "location": {
+      "name": {
+        "en": "Espacio Inestable Theater",
+        "es": "Teatro Espacio Inestable"
+      },
+      "address": "Calle Aparisi i Guijarro, 7",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "The Alba Vayá drama school presents a creative ensemble piece \"De muerto presente\". This original Spanish-language play, performed by young actors, offers an evening of contemporary theatre in the heart of Valencia.",
+      "es": "La escuela de teatro de Alba Vayá presenta \"De muerto presente\", una obra coral creativa. Esta pieza original en español, interpretada por jóvenes actores, ofrece una velada de teatro contemporáneo en el corazón de Valencia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://allevents.in/val%C3%A8ncia/de-muerto-presente-5-y-6-julio-2025/200024818734555",
+      "provider": "AllEvents"
+    },
+    "price": "€10"
+  },
+  {
+    "title": {
+      "en": "Sunrise Yoga & Fitness at Malvarrosa Beach",
+      "es": "Yoga y fitness al amanecer en la Playa de la Malvarrosa"
+    },
+    "date": "2025-07-07",
+    "location": {
+      "name": {
+        "en": "Malvarrosa Beach (Zone B)",
+        "es": "Playa de la Malvarrosa (Zona B)"
+      },
+      "address": "Passeig Marítim de València, 15",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Start your week with a healthy mind and body. Every Monday morning in July, certified instructors lead free yoga and cardio sessions on the sand of Malvarrosa Beach as the sun rises over the sea.",
+      "es": "Comienza la semana con mente y cuerpo sanos. Cada lunes por la mañana de julio, instructores certificados dirigen sesiones gratuitas de yoga y cardio sobre la arena de la Playa de la Malvarrosa mientras el sol sale sobre el mar."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Valencia Summer Funfair",
+      "es": "Feria de atracciones de verano de València"
+    },
+    "date": "2025-07-07",
+    "location": {
+      "name": {
+        "en": "Turia Gardens – Section IX",
+        "es": "Jardín del Turia – Tramo IX"
+      },
+      "address": "Passeig de la Petxina (Tramo IX)",
+      "district": "Camins al Grau"
+    },
+    "description": {
+      "en": "The classic summer funfair returns to the old Turia riverbed, with rides like the ferris wheel, bumper cars, a haunted house, game booths and food stalls. Open nightly through July, it’s perfect for families and thrill-seekers.",
+      "es": "La clásica feria de atracciones de verano regresa al antiguo cauce del Turia, con atracciones como la noria, los coches de choque, una casa del terror, casetas de juegos y puestos de comida. Abierta cada noche durante julio, es perfecta para familias y amantes de la adrenalina."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.idealista.com/en/news/lifestyle-in-spain/2025/07/02/851302-things-to-do-in-valencia-in-july-2025-events-activities-and-experiences",
+      "provider": "Idealista News"
+    },
+    "price": "Free entry (rides pay-per-use)"
+  },
+  {
+    "title": {
+      "en": "Leonardo Da Vinci Immersive Exhibition",
+      "es": "Exposición inmersiva Leonardo Da Vinci"
+    },
+    "date": "2025-07-07",
+    "location": {
+      "name": {
+        "en": "Principe Felipe Science Museum",
+        "es": "Museo de las Ciencias Príncipe Felipe"
+      },
+      "address": "Av. Professor López Piñero, 7",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Dive into the inventions and art of Leonardo Da Vinci through an interactive immersive experience. Full-scale machine models, projections and hands-on displays bring the Renaissance genius to life.",
+      "es": "Sumérgete en los inventos y el arte de Leonardo Da Vinci a través de una experiencia inmersiva interactiva. Modelos a escala real de sus máquinas, proyecciones y exhibiciones prácticas dan vida al genio del Renacimiento."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.cac.es/en/museu-de-les-ciencies/exposiciones/leonardo-da-vinci-immersive.html",
+      "provider": "Ciutat de les Arts i les Ciències"
+    },
+    "price": "€8"
+  },
+  {
+    "title": {
+      "en": "María José Llergo + Marina Reche Concert",
+      "es": "Concierto de María José Llergo + Marina Reche"
+    },
+    "date": "2025-07-08",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Spanish flamenco-fusion singer María José Llergo shares her soulful voice in concert, joined by pop newcomer Marina Reche. Experience a magical evening mixing deep flamenco roots with modern sounds.",
+      "es": "La cantaora española de flamenco-fusión María José Llergo despliega su voz llena de alma en concierto, acompañada por la joven artista pop Marina Reche. Vive una noche mágica que combina las profundas raíces flamencas con sonidos modernos."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Summer Beachside Market",
+      "es": "Mercado veraniego junto al mar"
+    },
+    "date": "2025-07-08",
+    "location": {
+      "name": {
+        "en": "Paseo Marítimo de El Cabanyal",
+        "es": "Paseo Marítimo de El Cabanyal"
+      },
+      "address": "Paseo Marítimo (Las Arenas – Akuarela stretch)",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Stroll along the Cabanyal seaside promenade and browse the seasonal summer market. Dozens of stalls sell handmade crafts, beachwear, jewelry, and souvenirs every evening, adding a lively shopping vibe by the beach.",
+      "es": "Pasea por el paseo marítimo del Cabanyal y recorre el mercado estival de verano. Decenas de puestos venden artesanía, ropa de playa, joyería y souvenirs cada tarde, aportando un animado ambiente de compras junto al mar."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/04/09/mercado-verano-paseo-maritimo-valencia-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free entry"
+  },
+  {
+    "title": {
+      "en": "Tango Milonga on the Beach",
+      "es": "Milonga de tango en la playa"
+    },
+    "date": "2025-07-08",
+    "location": {
+      "name": {
+        "en": "Malvarrosa Beach Boardwalk",
+        "es": "Paseo de la Malvarrosa"
+      },
+      "address": "Passeig Marítim de la Malvarrosa, 30",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Feel the romance of Argentina in Valencia! On select summer evenings, dancers gather on the Malvarrosa boardwalk for a free open-air tango milonga. Whether dancing or watching, enjoy the music of Buenos Aires by the Mediterranean.",
+      "es": "¡Siente el romanticismo de Argentina en Valencia! En tardes veraniegas seleccionadas, bailarines se reúnen en el paseo de la Malvarrosa para una milonga de tango al aire libre y gratuita. Ya sea bailando o mirando, disfruta la música de Buenos Aires junto al Mediterráneo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Trueno – Latin Urban Concert",
+      "es": "Trueno – Concierto de música urbana latina"
+    },
+    "date": "2025-07-09",
+    "location": {
+      "name": {
+        "en": "La Marina Norte Auditorium",
+        "es": "Auditorio Marina Norte"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Argentine rap star Trueno brings Latin urban beats to Valencia as part of the FAR Festival. Known for his electrifying stage presence, Trueno will perform hits like “Dance Crip” for an adrenaline-pumped crowd by the sea.",
+      "es": "La estrella del rap argentino Trueno trae ritmos urbanos latinos a Valencia como parte del Festival FAR. Conocido por su electrizante presencia escénica, Trueno interpretará éxitos como “Dance Crip” ante un público lleno de adrenalina junto al mar."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://farvalencia.es/",
+      "provider": "FAR València Festival"
+    },
+    "price": "From €25"
+  },
+  {
+    "title": {
+      "en": "Valencia Ghost Tour (Night Walk)",
+      "es": "Ruta de los fantasmas de Valencia (paseo nocturno)"
+    },
+    "date": "2025-07-09",
+    "location": {
+      "name": {
+        "en": "Plaza de la Virgen (Tour Start)",
+        "es": "Plaza de la Virgen (inicio del tour)"
+      },
+      "address": "Plaça de la Verge, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Explore the mysterious side of Valencia on a guided Ghost Tour through the historic center. As night falls, hear chilling legends and local ghost stories at landmarks like La Xerea and the Serranos Towers.",
+      "es": "Explora el lado misterioso de Valencia en una Ruta de Fantasmas guiada por el centro histórico. Al caer la noche, escucha leyendas escalofriantes e historias de fantasmas locales en sitios emblemáticos como La Xerea y las Torres de Serranos."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-traditions/legends-mysteries",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free (tip-based)"
+  },
+  {
+    "title": {
+      "en": "Storytime with Elephants at BIOPARC",
+      "es": "Cuentacuentos junto a los elefantes en BIOPARC"
+    },
+    "date": "2025-07-09",
+    "location": {
+      "name": {
+        "en": "BIOPARC Valencia – Elephant Lake",
+        "es": "BIOPARC Valencia – Lago de elefantes"
+      },
+      "address": "Avenida Pío Baroja, 3",
+      "district": "Campanar"
+    },
+    "description": {
+      "en": "BIOPARC’s summer program offers an afternoon storytelling session for kids by the African elephant habitat. Children gather for animal-themed tales and fun facts in the shade, included with park admission.",
+      "es": "El programa de verano de BIOPARC ofrece una sesión de cuentacuentos por la tarde para niños junto al hábitat de elefantes africanos. Los peques se reúnen para escuchar cuentos sobre animales y curiosidades en la sombra, incluido con la entrada al parque."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.bioparcvalencia.es/agenda-actividades-verano-2025/",
+      "provider": "BIOPARC Valencia"
+    },
+    "price": "Included with entry"
+  },
+  {
+    "title": {
+      "en": "DreamHack Valencia 2025 (Gaming Festival)",
+      "es": "DreamHack Valencia 2025 (festival de gaming)"
+    },
+    "date": "2025-07-10",
+    "location": {
+      "name": {
+        "en": "Feria Valencia Convention Center",
+        "es": "Feria Valencia – Centro de Convenciones"
+      },
+      "address": "Avinguda de les Fires, s/n",
+      "district": "Benimàmet"
+    },
+    "description": {
+      "en": "One of the world’s biggest esports and gaming festivals lands in Valencia. Over four days, gamers enjoy LAN parties, pro esports tournaments, cosplay contests, new game demos and live music in an epic digital entertainment celebration.",
+      "es": "Uno de los mayores festivales de gaming y esports del mundo llega a Valencia. Durante cuatro días, los gamers disfrutan de LAN parties, torneos profesionales de esports, concursos de cosplay, demos de nuevos juegos y música en vivo en una épica celebración de entretenimiento digital."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://dreamhack.com/valencia-2025",
+      "provider": "DreamHack"
+    },
+    "price": "From €20"
+  },
+  {
+    "title": {
+      "en": "Vanesa Martín Concert",
+      "es": "Concierto de Vanesa Martín"
+    },
+    "date": "2025-07-10",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Popular Spanish singer-songwriter Vanesa Martín graces the Viveros stage with her soulful pop ballads. Fans will experience an intimate night as she performs songs from her latest album under the summer sky.",
+      "es": "La popular cantautora española Vanesa Martín se presenta en el escenario de Viveros con sus baladas pop llenas de sentimiento. Los fans vivirán una noche íntima mientras interpreta canciones de su último álbum bajo el cielo veraniego."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/viveros-concerts-2025-great-summer-music-event-valencia",
+      "provider": "Visit Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Fito Páez Concert",
+      "es": "Concierto de Fito Páez"
+    },
+    "date": "2025-07-10",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – Concert Stage",
+        "es": "Marina Norte – Escenario de conciertos"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Argentine rock legend Fito Páez takes the stage by the marina to perform his iconic songs. From piano-driven rock ballads to high-energy anthems, Fito’s show is a highlight of the FAR music series.",
+      "es": "La leyenda del rock argentino Fito Páez actúa junto a la marina para interpretar sus canciones icónicas. Desde baladas rock con piano hasta himnos enérgicos, el espectáculo de Fito es uno de los platos fuertes del ciclo musical FAR."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://farvalencia.es/",
+      "provider": "FAR València Festival"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "Europe (Band) Concert",
+      "es": "Concierto de Europe"
+    },
+    "date": "2025-07-11",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "International rock superstars Europe perform in Valencia for the first time, treating fans to classic hits like “The Final Countdown.” The ’80s legends will rock the Viveros venue with guitars blazing and crowd sing-alongs.",
+      "es": "Las superestrellas internacionales del rock Europe actúan en Valencia por primera vez, regalando a los fans éxitos clásicos como “The Final Countdown”. Estas leyendas de los 80 harán vibrar Viveros con guitarras estridentes y coros del público."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Molotov + Califato ¾ Concert",
+      "es": "Concierto de Molotov + Califato ¾"
+    },
+    "date": "2025-07-11",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – FAR Festival",
+        "es": "Marina Norte – Festival FAR"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Mexican rock-rap rebels Molotov team up with Andalusian fusion collective Califato ¾ for a double-bill concert. Expect explosive energy, political lyrics, and a genre-bending mashup of rock, hip-hop and flamenco electronics.",
+      "es": "Los rebeldes mexicano Molotov (rock-rap) se unen al colectivo andaluz de fusión Califato ¾ en un concierto doble. Se espera energía explosiva, letras reivindicativas y una mezcla de géneros que combina rock, hip-hop y electrónica flamenca."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://farvalencia.es/",
+      "provider": "FAR València Festival"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "Hollywood Treasures Exhibition",
+      "es": "Exposición \"Tesoros de Hollywood\""
+    },
+    "date": "2025-07-11",
+    "location": {
+      "name": {
+        "en": "Ateneo Mercantil de Valencia",
+        "es": "Ateneo Mercantil de Valencia"
+      },
+      "address": "Plaça de l'Ajuntament, 18",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "This unique exhibition showcases iconic movie props and costumes from Hollywood, all authenticated and signed by film stars. From legendary costumes to famous gadgets, explore cinematic history up close in Valencia.",
+      "es": "Esta exhibición única muestra objetos icónicos de películas y vestuarios de Hollywood, todos autenticados y firmados por estrellas de cine. Desde trajes legendarios hasta artilugios famosos, explora de cerca la historia del cine en Valencia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/07/10/exposicion-tesoros-de-hollywood-valencia/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "€10"
+  },
+  {
+    "title": {
+      "en": "Latin Fest Valencia 2025",
+      "es": "Latin Fest Valencia 2025"
+    },
+    "date": "2025-07-12",
+    "location": {
+      "name": {
+        "en": "Marina Sur Auditorium",
+        "es": "Auditorio Marina Sur"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Don’t miss the biggest urban Latin music festival in Valencia, featuring top reggaeton and trap artists like Emilia, Kapo, Beéle and more. An all-day party with live performances, food trucks and tropical vibes at the waterfront.",
+      "es": "No te pierdas el mayor festival de música urbana latina en Valencia, con los mejores artistas de reggaetón y trap como Emilia, Kapo, Beéle y más. Un día completo de fiesta con actuaciones en vivo, food trucks y ambiente tropical en la zona marítima."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://entradas.com/LatinFestValencia-2025",
+      "provider": "Entradas.com"
+    },
+    "price": "€30"
+  },
+  {
+    "title": {
+      "en": "La La Love You + Guest Concert",
+      "es": "Concierto de La La Love You + invitado"
+    },
+    "date": "2025-07-12",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Indie pop band La La Love You brings their catchy, upbeat tunes to the Viveros Concerts. With a special guest opener, this evening promises feel-good Spanish pop-punk anthems that will have the crowd jumping and singing along.",
+      "es": "La banda de indie pop La La Love You trae sus pegadizas y animadas canciones a los Conciertos de Viveros. Con un artista invitado especial, esta noche promete himnos de pop-punk español llenos de buen rollo que harán saltar y cantar al público."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Dragon Boat Spanish Championship",
+      "es": "Campeonato de España de Dragon Boat"
+    },
+    "date": "2025-07-12",
+    "location": {
+      "name": {
+        "en": "La Marina de València – Dock area",
+        "es": "Marina de València – Zona de dársena"
+      },
+      "address": "Moll de la Marina, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Feel the excitement as teams from all over Spain paddle in unison at the Dragon Boat 200m Championship. Colorful long boats with dragon heads race in the marina’s calm waters in a display of teamwork and strength.",
+      "es": "Vive la emoción mientras equipos de toda España reman al unísono en el Campeonato de Dragon Boat 200m. Llamativas embarcaciones largas con cabezas de dragón compiten en las aguas tranquilas de la marina en una demostración de trabajo en equipo y fuerza."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.federemo.es/dragonboat2025",
+      "provider": "Spanish Canoeing Federation"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Midnight Fireworks at Monteolivete Bridge",
+      "es": "Castillo de fuegos en el Puente de Monteolivete"
+    },
+    "date": "2025-07-12",
+    "location": {
+      "name": {
+        "en": "Monteolivete Bridge & City of Arts",
+        "es": "Puente de Monteolivete y Ciudad de las Artes"
+      },
+      "address": "Pont de Monteolivete, s/n",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Another Saturday night means another dazzling fireworks show as part of the Gran Fira. At 23:59, Pirotecnia Vulcano launches a spectacular castillo from Monteolivete Bridge, illuminating the City of Arts and Sciences with cascades of color.",
+      "es": "Otro sábado por la noche trae otro deslumbrante espectáculo pirotécnico dentro de la Gran Fira. A las 23:59, Pirotecnia Vulcano lanza un espectacular castillo desde el Puente de Monteolivete, iluminando la Ciudad de las Artes y las Ciencias con cascadas de color."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Álvaro de Luna & Bombai Concert",
+      "es": "Concierto de Álvaro de Luna y Bombai"
+    },
+    "date": "2025-07-13",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Spanish pop-rock meets Valencian pop as singer Álvaro de Luna shares the bill with local band Bombai. This double concert offers feel-good summer songs and radio hits that will have the audience singing along all night.",
+      "es": "El pop-rock español se une al pop valenciano cuando el cantante Álvaro de Luna comparte cartel con la banda local Bombai. Este concierto doble ofrece canciones veraniegas llenas de buen rollo y éxitos de radio que harán al público cantar toda la noche."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Silk Road Walking Tour",
+      "es": "Ruta guiada \"Camins de la Seda\""
+    },
+    "date": "2025-07-13",
+    "location": {
+      "name": {
+        "en": "Lonja de la Seda (Tour Meeting Point)",
+        "es": "Lonja de la Seda (punto de encuentro)"
+      },
+      "address": "Carrer de la Llotja, 2",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "A Sunday morning guided tour exploring Valencia’s silk heritage. Visit the UNESCO-listed Silk Exchange (Lonja) and stroll through historic barrio Velluters, learning about the city’s famous silk industry and trade routes.",
+      "es": "Tour guiado el domingo por la mañana explorando la herencia de la seda en Valencia. Visita la Lonja de la Seda, declarada Patrimonio de la UNESCO, y pasea por el histórico barrio de Velluters, aprendiendo sobre la célebre industria sedera y las rutas comerciales de la ciudad."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.caminart.es/pr%C3%B3ximas-experiencias/",
+      "provider": "CaminArt"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Sunday Jazz at Mercado de Colón",
+      "es": "Jazz dominical en el Mercado de Colón"
+    },
+    "date": "2025-07-13",
+    "location": {
+      "name": {
+        "en": "Mercado de Colón (Central Plaza)",
+        "es": "Mercado de Colón (plaza central)"
+      },
+      "address": "Calle Jorge Juan, 19",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "Unwind with a mid-day jazz session in the beautiful Mercado de Colón. A local jazz ensemble plays swing and bossa nova tunes in the market’s open atrium – the perfect soundtrack to a leisurely Sunday brunch or vermouth.",
+      "es": "Relájate con una sesión de jazz al mediodía en el bello Mercado de Colón. Un conjunto local de jazz interpreta temas de swing y bossa nova en el atrio abierto del mercado, la banda sonora perfecta para un brunch o vermú tranquilo de domingo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/sunday-jazz-mercado-colon",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Oceanogràfic Nights – Summer Edition",
+      "es": "Noches del Oceanogràfic – Edición de verano"
+    },
+    "date": "2025-07-14",
+    "location": {
+      "name": {
+        "en": "Oceanogràfic Valencia",
+        "es": "Oceanogràfic de València"
+      },
+      "address": "Carrer Eduardo Primo Yúfera, 1B",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Each evening, Europe’s largest aquarium extends its hours until midnight. Stroll through the exhibits under moonlight and catch special dolphin shows and music after dark as the Oceanogràfic transforms into a magical nighttime marine world.",
+      "es": "Cada tarde, el acuario más grande de Europa extiende su horario hasta la medianoche. Pasea por las exhibiciones bajo la luz de la luna y disfruta de exhibiciones especiales de delfines y música al anochecer mientras el Oceanogràfic se transforma en un mundo marino nocturno mágico."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.oceanografic.org/en/summer-nights-2025",
+      "provider": "Oceanogràfic Valencia"
+    },
+    "price": "€29"
+  },
+  {
+    "title": {
+      "en": "“¡Eso no es cómic!” Comic Art Exhibition",
+      "es": "Exposición “¡Eso no es cómic!”"
+    },
+    "date": "2025-07-14",
+    "location": {
+      "name": {
+        "en": "IVAM – Institut Valencià d'Art Modern",
+        "es": "IVAM – Institut Valencià d'Art Modern"
+      },
+      "address": "Calle Guillem de Castro, 118",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "The IVAM’s latest exhibition explores the world of comics as an art form. Original pages, fanzines, and illustrations highlight the intersection of comic language with contemporary art in this thought-provoking display.",
+      "es": "La nueva exposición del IVAM explora el mundo del cómic como forma de arte. Páginas originales, fanzines e ilustraciones destacan la intersección del lenguaje del cómic con el arte contemporáneo en esta muestra que invita a la reflexión."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.ivam.es/en/exposiciones/eso-no-es-comic-2025",
+      "provider": "IVAM"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Detective School 2025: A Sonic Adventure",
+      "es": "Escuela de detectives 2025: Una aventura sonora"
+    },
+    "date": "2025-07-14",
+    "location": {
+      "name": {
+        "en": "Centre del Carme (Patio Gótico)",
+        "es": "Centre del Carme (Patio Gótico)"
+      },
+      "address": "Carrer del Museu, 2",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "A free interactive mystery for kids: little detectives solve clues through sound in this creative workshop. Running weekdays, the “sound adventure” detective school engages children in puzzles and games in a historic cloister setting.",
+      "es": "Una misteriosa actividad interactiva gratuita para niños: los pequeños detectives resuelven pistas a través del sonido en este creativo taller. De lunes a viernes, la escuela de detectives “aventura sonora” involucra a los niños en rompecabezas y juegos en el claustro histórico."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-infantil",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "The Human League Concert",
+      "es": "Concierto de The Human League"
+    },
+    "date": "2025-07-15",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "80s synth-pop pioneers The Human League bring their retro-futuristic sound to Valencia. Fans will groove to classics like “Don’t You Want Me” as the British band delivers a nostalgic, danceable show in the open air.",
+      "es": "Los pioneros del synth-pop de los 80, The Human League, traen su sonido retro-futurista a Valencia. Los fans bailarán al ritmo de clásicos como “Don’t You Want Me” mientras la banda británica ofrece un espectáculo nostálgico y bailable al aire libre."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Paella Cooking Class & Market Tour",
+      "es": "Clase de cocina de paella y visita al mercado"
+    },
+    "date": "2025-07-15",
+    "location": {
+      "name": {
+        "en": "Central Market (meeting point)",
+        "es": "Mercado Central (punto de encuentro)"
+      },
+      "address": "Plaça de la Ciutat de Bruges, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Learn to cook Valencia’s signature dish in a hands-on paella workshop. Shop for fresh ingredients at the historic Central Market with a chef, then head to a nearby kitchen to prepare and savor an authentic paella lunch.",
+      "es": "Aprende a cocinar el plato emblemático de Valencia en un taller práctico de paella. Compra ingredientes frescos en el histórico Mercado Central con un chef, luego ve a una cocina cercana para preparar y saborear un auténtico almuerzo de paella."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/experiences/paella-cooking-class",
+      "provider": "Visit Valencia"
+    },
+    "price": "€60"
+  },
+  {
+    "title": {
+      "en": "Street Art Tour of El Carmen",
+      "es": "Tour de arte urbano por El Carmen"
+    },
+    "date": "2025-07-15",
+    "location": {
+      "name": {
+        "en": "Torres de Quart (starting point)",
+        "es": "Torres de Quart (punto de inicio)"
+      },
+      "address": "Plaça de Santa Úrsula, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Discover Valencia’s vibrant urban art scene on a guided walking tour through the El Carmen district. See colorful murals by local and international street artists, learn the stories behind the artworks, and photograph the city’s most Instagrammable graffiti spots.",
+      "es": "Descubre la vibrante escena de arte urbano de Valencia en un recorrido guiado a pie por el barrio de El Carmen. Contempla murales llenos de color de artistas callejeros locales e internacionales, conoce las historias detrás de las obras y fotografía los grafitis más instagrameables de la ciudad."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://guruwalk.com/valencia-street-art-tour",
+      "provider": "GuruWalk"
+    },
+    "price": "Free (donation)"
+  },
+  {
+    "title": {
+      "en": "Camila + Colectivo Panamera Concert",
+      "es": "Concierto de Camila + Colectivo Panamera"
+    },
+    "date": "2025-07-16",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Mexican pop-rock trio Camila performs their romantic hits (“Mientes”, “Todo Cambió”) in Valencia, joined by fusion group Colectivo Panamera. A night of Latin pop excellence blending powerful ballads and tropical rhythms awaits.",
+      "es": "El trío mexicano de pop-rock Camila interpreta sus éxitos románticos (\"Mientes\", \"Todo Cambió\") en Valencia, acompañado del grupo de fusión Colectivo Panamera. Les espera una noche de excelencia del pop latino que combina potentes baladas y ritmos tropicales."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "137th International Band Contest – Opening",
+      "es": "137º Certamen Internacional de Bandas – Apertura"
+    },
+    "date": "2025-07-16",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Sala Iturbi)",
+        "es": "Palau de la Música (Sala Iturbi)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "The world’s most prestigious concert band competition returns to Valencia. In the opening ceremony, brass and woodwind ensembles from Spain and abroad take the stage at Palau de la Música, filling the hall with symphonic sounds as the week-long contest begins.",
+      "es": "El concurso de bandas de música más prestigioso del mundo regresa a Valencia. En la ceremonia de apertura, conjuntos de metales y maderas de España y del extranjero toman el escenario del Palau de la Música, llenando la sala de sonidos sinfónicos al comenzar el certamen de una semana."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/137-certamen-internacional-bandas-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Chiara Oliver + Guest Concert",
+      "es": "Concierto de Chiara Oliver + invitado"
+    },
+    "date": "2025-07-17",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Up-and-coming singer Chiara Oliver, known for her soulful voice and pop-R&B style, performs under the stars at Viveros. An opening act (to be announced) will warm up the crowd for an enchanting summer concert night.",
+      "es": "La emergente cantante Chiara Oliver, conocida por su voz llena de soul y su estilo pop-R&B, actúa bajo las estrellas en Viveros. Un artista invitado (por confirmar) animará al público antes de una encantadora noche de concierto veraniego."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Los Planetas Concert",
+      "es": "Concierto de Los Planetas"
+    },
+    "date": "2025-07-17",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – FAR Festival",
+        "es": "Marina Norte – Festival FAR"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Cult Spanish indie rock band Los Planetas brings their distinctive shoegaze and flamenco-influenced sound to the FAR music series. Fans of alternative music will relish hearing classics from “Una Semana en el Motor de un Autobús” live by the sea.",
+      "es": "La banda de indie rock de culto Los Planetas trae su distintivo sonido con influencias del shoegaze y el flamenco al ciclo musical FAR. Los aficionados a la música alternativa disfrutarán escuchando en directo junto al mar clásicos de \"Una semana en el motor de un autobús\"."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://farvalencia.es/",
+      "provider": "FAR València Festival"
+    },
+    "price": "From €25"
+  },
+  {
+    "title": {
+      "en": "Stargazing Night with Telescopes",
+      "es": "Noche de observación astronómica con telescopios"
+    },
+    "date": "2025-07-17",
+    "location": {
+      "name": {
+        "en": "Umbracle Terrace, City of Arts and Sciences",
+        "es": "Terraza del Umbracle, Ciudad de las Artes y las Ciencias"
+      },
+      "address": "Av. del Professor López Piñero, 5",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Valencia’s Astronomy Association sets up telescopes for free public use to observe the moon, planets, and stars. From the panoramic Umbracle platform, experts guide you through the night sky – a perfect activity for curious minds of all ages.",
+      "es": "La Asociación de Astronomía de Valencia instala telescopios de uso público gratuito para observar la luna, planetas y estrellas. Desde la plataforma panorámica del Umbracle, expertos te guían por el cielo nocturno – una actividad perfecta para mentes curiosas de todas las edades."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/30/actividades-gratuitas-observacion-cielo-valencia-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Víctor Manuelle (Salsa) Concert",
+      "es": "Concierto de Víctor Manuelle (salsa)"
+    },
+    "date": "2025-07-18",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Puerto Rico’s “Sonero de la Juventud” Víctor Manuelle brings his smooth salsa romántica to the Valencia fair. Dancers won’t be able to stay in their seats as he delivers hit after hit of irresistible Latin rhythms under the stars.",
+      "es": "El “Sonero de la Juventud” de Puerto Rico, Víctor Manuelle, trae su suave salsa romántica a la feria de Valencia. Al ritmo de sus éxitos de irresistibles ritmos latinos bajo las estrellas, los bailarines no podrán quedarse sentados."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Modernist Night Tour – Camins Modernistes",
+      "es": "Ruta nocturna modernista – Camins Modernistes"
+    },
+    "date": "2025-07-18",
+    "location": {
+      "name": {
+        "en": "Plaça del Ajuntament (start of tour)",
+        "es": "Plaça de l'Ajuntament (inicio del recorrido)"
+      },
+      "address": "Plaça de l'Ajuntament, 1",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Discover Valencia’s Art Nouveau gems by moonlight on this guided walking tour. See illuminated modernist buildings like the Central Station and Post Office, and hear stories of the city’s turn-of-the-century architecture during this enchanting nighttime route.",
+      "es": "Descubre las joyas art nouveau de Valencia a la luz de la luna en esta ruta guiada a pie. Contempla edificios modernistas iluminados como la Estación del Norte y Correos, y escucha historias de la arquitectura valenciana de principios del siglo XX durante este encantador recorrido nocturno."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.caminart.es/pr%C3%B3ximas-experiencias/",
+      "provider": "CaminArt"
+    },
+    "price": "€12"
+  },
+  {
+    "title": {
+      "en": "International Band Contest – Semi-Finals",
+      "es": "Certamen Internacional de Bandas – Semifinales"
+    },
+    "date": "2025-07-18",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Sala Iturbi)",
+        "es": "Palau de la Música (Sala Iturbi)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "The band competition heats up as ensembles from different categories perform their contest pieces before an expert jury. Afternoon and evening sessions showcase the incredible talent of symphonic bands from around the world fighting for a place in the finals.",
+      "es": "La competición de bandas se intensifica a medida que las agrupaciones de distintas categorías interpretan sus piezas de concurso ante un jurado experto. Las sesiones de tarde y noche muestran el increíble talento de bandas sinfónicas de todo el mundo peleando por un puesto en la final."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.cibm-valencia.com/programa-2025",
+      "provider": "Certamen Internacional de Bandas de Música"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Luis Fonsi Concert",
+      "es": "Concierto de Luis Fonsi"
+    },
+    "date": "2025-07-19",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Latin pop superstar Luis Fonsi hits the Viveros stage on Saturday night. Crowds will sway and sing along to chart-toppers like “Despacito” and “Échame la Culpa” as Fonsi delivers one of the summer’s most anticipated concerts.",
+      "es": "La superestrella del pop latino Luis Fonsi se sube al escenario de Viveros el sábado por la noche. La multitud se mecerá y cantará éxitos como “Despacito” y “Échame la Culpa” mientras Fonsi ofrece uno de los conciertos más esperados del verano."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Leiva – Tour Gigante Concert",
+      "es": "Leiva – Concierto de la gira Gigante"
+    },
+    "date": "2025-07-19",
+    "location": {
+      "name": {
+        "en": "Ciutat de València Stadium",
+        "es": "Estadio Ciutat de València"
+      },
+      "address": "Carrer de Sant Vicent de Paül, 44",
+      "district": "Rascanya"
+    },
+    "description": {
+      "en": "Spanish rock singer Leiva brings his \"Gigante\" tour to Valencia’s Levante UD stadium. With a full band and a catalog of rock hits and heartfelt ballads, Leiva promises a powerful live show including songs from his new album \"Gigante\".",
+      "es": "El rockero español Leiva trae su gira \"Gigante\" al estadio del Levante UD en Valencia. Con banda completa y un repertorio de temas rockeros y baladas emotivas, Leiva promete un potente directo incluyendo canciones de su nuevo álbum \"Gigante\"."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/leiva-concert-2025",
+      "provider": "Visit Valencia"
+    },
+    "price": "From €45"
+  },
+  {
+    "title": {
+      "en": "Gran Nit de Juliol 2025",
+      "es": "Gran Nit de Juliol 2025"
+    },
+    "date": "2025-07-19",
+    "location": {
+      "name": {
+        "en": "Citywide (Various Venues)",
+        "es": "Toda la ciudad (varios lugares)"
+      },
+      "address": "Plaça de la Mare de Déu, s/n (central hub)",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Valencia’s \"Great Night\" offers a citywide cultural extravaganza. Museums and monuments stay open late with free entry, plazas come alive with jazz, magic, theater and folklore performances, and a spectacular midnight fire and music show lights up the summer night.",
+      "es": "La \"Gran Nit de Juliol\" de Valencia ofrece un despliegue cultural por toda la ciudad. Museos y monumentos abren hasta tarde con entrada gratuita, plazas se llenan de actuaciones de jazz, magia, teatro y folclore, y un espectacular show piromusical de medianoche ilumina la noche de verano."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/festivities/great-night-july",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Simple Minds Concert",
+      "es": "Concierto de Simple Minds"
+    },
+    "date": "2025-07-20",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Legendary Scottish band Simple Minds, famous for their 80s anthem “Don’t You (Forget About Me)”, deliver an open-air concert full of nostalgia. Jim Kerr and company will present a hit-filled set blending new wave and rock under Valencia’s stars.",
+      "es": "La legendaria banda escocesa Simple Minds, famosa por su himno de los 80 “Don’t You (Forget About Me)”, ofrece un concierto al aire libre lleno de nostalgia. Jim Kerr y compañía presentarán un repertorio repleto de éxitos que mezcla new wave y rock bajo las estrellas de Valencia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.abc.es/espana/comunidad-valenciana/cartel-conciertos-viveros-2025-valencia-20250701080458-nt.html",
+      "provider": "ABC"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "International Band Contest – Finals",
+      "es": "Certamen Internacional de Bandas – Finales"
+    },
+    "date": "2025-07-20",
+    "location": {
+      "name": {
+        "en": "Palau de la Música (Sala Iturbi)",
+        "es": "Palau de la Música (Sala Iturbi)"
+      },
+      "address": "Passeig de l’Albereda, 30",
+      "district": "L'Eixample"
+    },
+    "description": {
+      "en": "The 137th Band Contest culminates in a grand finale. Top bands from each division perform their finest pieces one last time. The morning concludes with an awards ceremony, as Valencia crowns the world’s best concert band of 2025 amidst applause and festive atmosphere.",
+      "es": "El 137º Certamen de Bandas culmina en una gran final. Las mejores bandas de cada sección interpretan sus mejores piezas una vez más. La mañana concluye con la ceremonia de premios, ya que Valencia corona a la mejor banda sinfónica del mundo de 2025 entre aplausos y ambiente festivo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.cibm-valencia.com/",
+      "provider": "Certamen Internacional de Bandas de Música"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Ancient Valencia: Roman & Visigoth Tour",
+      "es": "La Valencia Antigua: Ruta Romana y Visigoda"
+    },
+    "date": "2025-07-20",
+    "location": {
+      "name": {
+        "en": "Plaça de l'Almoina (start of tour)",
+        "es": "Plaça de l'Almoina (inicio del tour)"
+      },
+      "address": "Plaça Décimo Junio Bruto, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Travel back in time on a guided morning tour of Valencia’s ancient past. Visit archaeological sites under Almoina square, see remnants of the Roman forum and Visigothic church, and learn about Valentia’s origins over 2000 years ago.",
+      "es": "Viaja en el tiempo en un tour guiado matutino por el pasado antiguo de Valencia. Visita los yacimientos arqueológicos bajo la plaza de la Almoina, contempla restos del foro romano y una iglesia visigoda, y conoce los orígenes de Valentia hace más de 2000 años."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.caminart.es/pr%C3%B3ximas-experiencias/",
+      "provider": "CaminArt"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Hemingway Routes – Guided Walk",
+      "es": "Rutas Hemingway – visita guiada"
+    },
+    "date": "2025-07-21",
+    "location": {
+      "name": {
+        "en": "Hotel Victoria (start point)",
+        "es": "Hotel Victoria (punto de partida)"
+      },
+      "address": "Carrer de les Barques, 4",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Follow in the footsteps of Ernest Hemingway in Valencia. This free guided walk, offered during fair week, visits the writer’s old haunts – from the hotel where he stayed during the Civil War to the bars and bullring he wrote about – bringing history and literature to life.",
+      "es": "Sigue los pasos de Ernest Hemingway en Valencia. Esta visita guiada gratuita, ofrecida durante la semana de feria, recorre los antiguos lugares frecuentados por el escritor – desde el hotel donde se alojó durante la Guerra Civil hasta los bares y la plaza de toros sobre los que escribió – dando vida a la historia y la literatura."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "City Hall Clock Tower Open Day",
+      "es": "Jornada de puertas abiertas – Torre del Reloj del Ayuntamiento"
+    },
+    "date": "2025-07-21",
+    "location": {
+      "name": {
+        "en": "Valencia City Hall (Clock Tower)",
+        "es": "Ayuntamiento de Valencia (Torre del Reloj)"
+      },
+      "address": "Plaça de l'Ajuntament, 1",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Climb the historic clock tower of Valencia’s City Hall on this special open day. Visitors can ascend the spiral stairs for a close-up look at the clock mechanism and enjoy a unique panoramic view of the city center from the balcony.",
+      "es": "Sube a la histórica torre del reloj del Ayuntamiento de Valencia en esta jornada de puertas abiertas especial. Los visitantes pueden ascender la escalera de caracol para ver de cerca el mecanismo del reloj y disfrutar de una vista panorámica única del centro de la ciudad desde el balcón."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad",
+      "provider": "Valencia City Council"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Sunrise Pilates on the Beach",
+      "es": "Pilates al amanecer en la playa"
+    },
+    "date": "2025-07-21",
+    "location": {
+      "name": {
+        "en": "Patacona Beach – Zone Deportiva",
+        "es": "Playa de la Patacona – Zona deportiva"
+      },
+      "address": "Avinguda Mare Nostrum, 50",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Start the day with gentle exercise by the sea. Certified instructors lead a free Pilates session on Patacona Beach every Monday at 7:00 AM. Breathe in the fresh morning air and stretch your body as the sun rises over the Mediterranean.",
+      "es": "Empieza el día con ejercicio suave junto al mar. Instructores certificados dirigen una sesión gratuita de pilates en la Playa de la Patacona cada lunes a las 7:00 AM. Respira el aire fresco de la mañana y estira tu cuerpo mientras el sol se alza sobre el Mediterráneo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Gastro League Food & Music Festival (Day 1)",
+      "es": "Gastro League – Festival de comida y música (Día 1)"
+    },
+    "date": "2025-07-22",
+    "location": {
+      "name": {
+        "en": "Ciutat de València Stadium (Esplanade)",
+        "es": "Estadio Ciutat de València (explanada)"
+      },
+      "address": "Carrer de Sant Vicent de Paül, 44",
+      "district": "Rascanya"
+    },
+    "description": {
+      "en": "For three nights the Levante UD stadium grounds transform into an international street food market and concert venue. Sample cuisines from around the world at gourmet food trucks, then enjoy live performances by local bands and DJs. Surprises and a vibrant atmosphere await at this second annual Gastro League event.",
+      "es": "Durante tres noches, los exteriores del estadio del Levante UD se transforman en un mercado internacional de comida callejera y escenario de conciertos. Prueba cocinas de todo el mundo en food trucks gourmet y luego disfruta actuaciones en vivo de bandas locales y DJs. Te esperan sorpresas y un ambiente vibrante en esta segunda edición de la experiencia Gastroleague."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/mercados-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Valencian Folk Night at Palau Gardens",
+      "es": "Noche de folklore valenciano en Jardines del Palau"
+    },
+    "date": "2025-07-22",
+    "location": {
+      "name": {
+        "en": "Palau de la Música – North Pavilion",
+        "es": "Palau de la Música – Pabellón Norte"
+      },
+      "address": "Jardins del Túria, Tram VI",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Experience traditional Valencian culture with an evening of folk music and dance. Local groups perform jotas, fandangos and other regional tunes in traditional costume, turning the Palau Gardens into an open-air folk festival.",
+      "es": "Experimenta la cultura tradicional valenciana con una velada de música y danza folklóricas. Grupos locales interpretan jotas, fandangos y otros sones regionales con vestimenta tradicional, convirtiendo los Jardines del Palau en un festival folklórico al aire libre."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Sunset in Albufera – Free Shuttle & Boat",
+      "es": "Atardecer en la Albufera – Bus lanzadera y barca"
+    },
+    "date": "2025-07-22",
+    "location": {
+      "name": {
+        "en": "Embarcadero Gola de Pujol",
+        "es": "Embarcadero Gola de Pujol"
+      },
+      "address": "Carretera del Palmar, s/n",
+      "district": "Pobles del Sud"
+    },
+    "description": {
+      "en": "Catch the free evening shuttle to Albufera for a guided sunset experience. Departing at 19:30, the bus takes you to the Gola de Pujol pier where a traditional boat awaits to glide you across the serene lagoon as the sun sets.",
+      "es": "Toma el autobús lanzadera vespertino gratuito a la Albufera para una experiencia guiada del atardecer. Saliendo a las 19:30, el bus te lleva hasta el embarcadero de la Gola de Pujol, donde una barca tradicional te espera para llevarte por la tranquila laguna mientras cae el sol."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Nino Bravo Tribute Musical",
+      "es": "Musical tributo a Nino Bravo"
+    },
+    "date": "2025-07-23",
+    "location": {
+      "name": {
+        "en": "Calle Nino Bravo, Monteolivete",
+        "es": "Calle Nino Bravo, Monteolivete"
+      },
+      "address": "C/ Nino Bravo, s/n",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Valencia pays homage to beloved singer Nino Bravo with an open-air musical show in the street named after him. “Un beso y una flor: el tributo” features live singers performing Nino Bravo’s greatest hits in a nostalgic, heartfelt performance for fans of all ages.",
+      "es": "Valencia rinde homenaje al querido cantante Nino Bravo con un espectáculo musical al aire libre en la calle que lleva su nombre. “Un beso y una flor: el tributo” presenta cantantes en vivo interpretando los grandes éxitos de Nino Bravo en una actuación nostálgica y emotiva para fans de todas las edades."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Magic Gala \"The Magic Squadron\"",
+      "es": "Gala de magia \"El escuadrón mágico\""
+    },
+    "date": "2025-07-23",
+    "location": {
+      "name": {
+        "en": "Palau de la Música – North Pavilion",
+        "es": "Palau de la Música – Pabellón Norte"
+      },
+      "address": "Jardins del Túria, Tram VI",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "An enchanting magic gala for all ages. As night falls, a team of magicians (the “Magic Squadron”) performs astonishing illusions, sleight-of-hand, and comedy magic under the stars – a highlight of the fair’s free entertainment.",
+      "es": "Una gala de magia encantadora para todas las edades. Al caer la noche, un equipo de magos (el “Escuadrón Mágico”) realiza asombrosas ilusiones, juegos de manos y magia cómica bajo las estrellas – un plato fuerte del entretenimiento gratuito de la feria."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Clown & Juggler Show (Javi Javichi)",
+      "es": "Espectáculo de clown y malabares (Javi Javichi)"
+    },
+    "date": "2025-07-23",
+    "location": {
+      "name": {
+        "en": "Calle Nino Bravo, Monteolivete",
+        "es": "Calle Nino Bravo, Monteolivete"
+      },
+      "address": "C/ Nino Bravo, s/n",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Popular clown and juggler Javi Javichi brings laughter to the neighborhood with his family-friendly street show. Expect physical comedy, silly antics, and impressive juggling tricks that will delight kids and adults alike.",
+      "es": "El conocido payaso y malabarista Javi Javichi lleva risas al barrio con su espectáculo callejero para toda la familia. Habrá humor físico, travesuras disparatadas y sorprendentes trucos de malabares que encantarán tanto a niños como a adultos."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Marta Santos Concert",
+      "es": "Concierto de Marta Santos"
+    },
+    "date": "2025-07-24",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Valencian singer Marta Santos, a rising star with a powerful voice steeped in flamenco and soul, closes out the Viveros Concert cycle. Her emotional performance will captivate the audience in the final night of the series.",
+      "es": "La cantante valenciana Marta Santos, una estrella emergente con una potente voz impregnada de flamenco y soul, cierra el ciclo de Conciertos de Viveros. Su emotiva actuación cautivará al público en la noche final de la serie."
+    },
+    "imageUrl": "https://www.valencia.es/documents/20142/30641816/0630+Gran+Fira+VLC.+Concerts.jpeg",
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Queen Tribute Concert (MOMO)",
+      "es": "Concierto tributo a Queen (MOMO)"
+    },
+    "date": "2025-07-24",
+    "location": {
+      "name": {
+        "en": "Palau de la Música – North Pavilion",
+        "es": "Palau de la Música – Pabellón Norte"
+      },
+      "address": "Jardins del Túria, Tram VI",
+      "district": "Quatre Carreres"
+    },
+    "description": {
+      "en": "Relive the magic of Queen with Spanish tribute band MOMO. From “Bohemian Rhapsody” to “We Will Rock You,” MOMO delivers Freddie Mercury’s legendary vocals and Queen’s rock grandeur in an electrifying live tribute.",
+      "es": "Revive la magia de Queen con la banda tributo española MOMO. Desde “Bohemian Rhapsody” hasta “We Will Rock You”, MOMO reproduce la voz legendaria de Freddie Mercury y la grandeza rockera de Queen en un electrizante tributo en vivo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Eternal Mecano – Live Tribute",
+      "es": "\"Eternal Mecano\" – tributo en vivo"
+    },
+    "date": "2025-07-24",
+    "location": {
+      "name": {
+        "en": "Castellar-L'Oliveral Sports Center",
+        "es": "Polideportivo Castellar-L’Oliveral"
+      },
+      "address": "Plaça Pintor Segrelles, s/n",
+      "district": "Pobles del Sud"
+    },
+    "description": {
+      "en": "A musical tribute show celebrating the songs of Mecano – Spain’s iconic 80s pop band. With live musicians and singers, “Eternal Mecano” recreates hits like “Hijo de la Luna” and “Mujer contra Mujer” in a vibrant performance that has the audience singing along.",
+      "es": "Espectáculo musical de homenaje que celebra las canciones de Mecano – la icónica banda pop española de los 80. Con músicos y cantantes en vivo, “Eternal Mecano” recrea éxitos como “Hijo de la Luna” y “Mujer contra Mujer” en una actuación vibrante que hace cantar al público."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "KREAM by Alvama Ice (DJ Set)",
+      "es": "\"KREAM\" de Alvama Ice (Sesión DJ)"
+    },
+    "date": "2025-07-25",
+    "location": {
+      "name": {
+        "en": "Viveros Gardens (Jardines del Real)",
+        "es": "Jardines de Viveros (Jardines del Real)"
+      },
+      "address": "Carrer de Cavanilles, 1",
+      "district": "La Saïdia"
+    },
+    "description": {
+      "en": "Local urban artist Alvama Ice presents “KREAM,” a unique DJ/live show blending trap, reggaeton and electronica, closing out the Viveros concert series with a late-night party vibe.",
+      "es": "El artista urbano local Alvama Ice presenta “KREAM”, un show único de DJ en vivo que combina trap, reggaetón y electrónica, clausurando el ciclo de conciertos de Viveros con ambiente de fiesta nocturna."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://topvalencia.net/conciertos-viveros-feria-julio-valencia/",
+      "provider": "Top Valencia"
+    },
+    "price": "From €18"
+  },
+  {
+    "title": {
+      "en": "Los Manolos + G5 Supergroup Concert",
+      "es": "Concierto de Los Manolos + Súper Combo G5"
+    },
+    "date": "2025-07-25",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – FAR Festival",
+        "es": "Marina Norte – Festival FAR"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Barcelona rumba band Los Manolos (“Amigos para siempre”) team up with the flamenco-rock supergroup G5 (Kiko Veneno, Muchachito, Tomasito, etc.) for an unforgettable night of fiesta. This high-energy show blends rumba catalana with flamenco and rock in a joyful celebration of Spanish music.",
+      "es": "La banda de rumba barcelonesa Los Manolos (\"Amigos para siempre\") se une al supergrupo de flamenco-rock G5 (Kiko Veneno, Muchachito, Tomasito, etc.) para una noche de fiesta inolvidable. Este show lleno de energía fusiona rumba catalana con flamenco y rock en una celebración alegre de la música española."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/festival-far-valencia-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "\"La Hora Loca\" Pool Party",
+      "es": "Pool party \"La Hora Loca\""
+    },
+    "date": "2025-07-25",
+    "location": {
+      "name": {
+        "en": "Parque del Oeste Outdoor Pool",
+        "es": "Piscina del Parque del Oeste"
+      },
+      "address": "Carrer del Músic Ayllón, s/n",
+      "district": "L'Olivereta"
+    },
+    "description": {
+      "en": "The final Friday night of the summer pool sessions goes out with a bang. At “La Hora Loca – Summer Hits,” expect a crazy hour of party props, costumes, confetti and non-stop dance music at the West Park Pool. Swim, dance and celebrate the season finale from 9pm to 1am.",
+      "es": "El último viernes nocturno de las sesiones veraniegas en la piscina se despide por todo lo alto. En “La Hora Loca – Summer Hits” espera una hora loca de accesorios de fiesta, disfraces, confeti y música bailable sin pausa en la Piscina del Parque del Oeste. Nada, baila y celebra el final de temporada de 21h a 1h."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "€3"
+  },
+  {
+    "title": {
+      "en": "XV Open La Malva Beach Volleyball Tournament",
+      "es": "XV Open La Malva – Torneo de voley playa"
+    },
+    "date": "2025-07-26",
+    "location": {
+      "name": {
+        "en": "Malvarrosa Beach Volleyball Courts",
+        "es": "Canchas de vóley de la playa Malvarrosa"
+      },
+      "address": "Passeig Marítim de València, 30",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Watch top beach volleyball teams compete on the sand at the 15th Open La Malva. Matches run all day Saturday (and Sunday) on Malvarrosa Beach, where athletes spike, block and dive in the quest for the championship in Spain’s premier summer beach volleyball event.",
+      "es": "Observa a los mejores equipos de vóley playa competir sobre la arena en el XV Open La Malva. Los partidos se disputan todo el sábado (y domingo) en la playa de la Malvarrosa, donde los atletas rematan, bloquean y se lanzan en busca del campeonato en el principal torneo veraniego de vóley playa en España."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://fdmvalencia.es/agenda/xv-open-la-malva-2025",
+      "provider": "Fundación Deportiva Municipal"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Arde Bogotá Concert",
+      "es": "Concierto de Arde Bogotá"
+    },
+    "date": "2025-07-26",
+    "location": {
+      "name": {
+        "en": "Ciutat de València Stadium",
+        "es": "Estadio Ciutat de València"
+      },
+      "address": "Carrer de Sant Vicent de Paül, 44",
+      "district": "Rascanya"
+    },
+    "description": {
+      "en": "Rising Spanish rock band Arde Bogotá ignites the night with their high-voltage live show at Levante’s stadium. Touring their new album, the Murcian quartet will deliver raw alternative rock energy and powerful lyrics that connect with a new generation of rock fans.",
+      "es": "La ascendente banda española de rock Arde Bogotá prende la noche con su enérgico directo en el estadio del Levante. Presentando su nuevo álbum, el cuarteto murciano desplegará la energía cruda del rock alternativo y letras potentes que conectan con una nueva generación de aficionados al rock."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/arde-bogota-concert-2025",
+      "provider": "Visit Valencia"
+    },
+    "price": "From €40"
+  },
+  {
+    "title": {
+      "en": "Premier Remember – 90s Dance Night",
+      "es": "Premier Remember – Noche dance 90s"
+    },
+    "date": "2025-07-26",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – FAR Festival",
+        "es": "Marina Norte – Festival FAR"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Dance the night away to classic Eurodance and techno at FAR’s special “Premier Remember” event. A lineup of 90s dance legends (Fragma, Dee Dee, La Luna, etc.) reunite on stage with famous DJs for a nostalgic rave that brings the Spanish “Ruta del Bakalao” spirit into 2025.",
+      "es": "Baila hasta el amanecer con eurodance y techno clásicos en el evento especial “Premier Remember” del FAR. Un cartel de leyendas dance de los 90 (Fragma, Dee Dee, La Luna, etc.) se reúne en el escenario con DJs famosos para un rave nostálgico que trae el espíritu de la “Ruta del Bakalao” a 2025."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/festival-far-valencia-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "Correfoc & Global Fireworks Finale",
+      "es": "Correfoc y apoteosis de fuegos globales"
+    },
+    "date": "2025-07-26",
+    "location": {
+      "name": {
+        "en": "Historic Center (Carrer de la Pau to Porta de la Mar)",
+        "es": "Centro histórico (de Calle de la Paz a Porta de la Mar)"
+      },
+      "address": "Carrer de la Pau / Porta de la Mar",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "The streets of central Valencia erupt with fire and drumbeats in the traditional “correfoc” (fire-run). Devils and monsters dance with sparklers, followed by a grand final fireworks “apotheosis” that floods the night sky with light and brings the fair’s pyrotechnic program to a thunderous close.",
+      "es": "Las calles del centro de Valencia estallan con fuego y tambores en el tradicional correfoc. Demonios y monstruos bailan con bengalas, seguido de una gran apoteosis final de fuegos artificiales que inunda el cielo nocturno de luz y pone un cierre atronador al programa pirotécnico de la feria."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Battle of Flowers 2025",
+      "es": "Batalla de Flores 2025"
+    },
+    "date": "2025-07-27",
+    "location": {
+      "name": {
+        "en": "Paseo de la Alameda",
+        "es": "Paseo de la Alameda"
+      },
+      "address": "Passeig de l'Albereda, s/n",
+      "district": "El Pla del Real"
+    },
+    "description": {
+      "en": "Valencia’s most charming tradition marks the end of the fair: the Battle of Flowers. Lavishly decorated floats parade down the Alameda at 8pm, as participants in traditional dress hurl thousands of orange marigolds at each other and into the crowd, carpeting the promenade in blossoms.",
+      "es": "La tradición más entrañable de Valencia marca el fin de la feria: la Batalla de Flores. Carrozas ricamente decoradas desfilan por la Alameda a las 20:00, mientras participantes en traje tradicional se lanzan miles de claveles anaranjados entre sí y al público, cubriendo el paseo de pétalos."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/events-valencia/festivities/battle-flowers",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free (grandstands by lottery)"
+  },
+  {
+    "title": {
+      "en": "Salsa Orchestra Plena 79 in Concert",
+      "es": "Orquesta de salsa Plena 79 en concierto"
+    },
+    "date": "2025-07-27",
+    "location": {
+      "name": {
+        "en": "Alquería de la Torre (La Torre district)",
+        "es": "Alquería de la Torre (barrio de La Torre)"
+      },
+      "address": "Carrer de la Alquería de la Torre, s/n",
+      "district": "Pobles del Sud"
+    },
+    "description": {
+      "en": "After the Battle of Flowers, the festivities continue in the village of La Torre with an outdoor salsa concert by Orquesta Plena 79. Neighbors and visitors gather to dance to live tropical rhythms, turning Sunday night into a lively street party.",
+      "es": "Tras la Batalla de Flores, la fiesta continúa en el pueblo de La Torre con un concierto de salsa al aire libre a cargo de la Orquesta Plena 79. Vecinos y visitantes se reúnen para bailar al son de ritmos tropicales en vivo, convirtiendo el domingo por la noche en una animada verbena callejera."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Closing Fireworks at the Beach",
+      "es": "Fuegos de clausura en la playa"
+    },
+    "date": "2025-07-27",
+    "location": {
+      "name": {
+        "en": "Paseo Marítimo (Malvarrosa Beach)",
+        "es": "Paseo Marítimo (Playa de la Malvarrosa)"
+      },
+      "address": "Passeig Marítim de València, 31",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "The Great Fair concludes with one last fireworks spectacle at the seashore. At 23:59, Pirotecnia Martí launches the closing display from the beachfront, blending the sound of the waves with the thunder of fireworks to bid July farewell in style.",
+      "es": "La Gran Feria concluye con un último espectáculo pirotécnico a orillas del mar. A las 23:59, Pirotecnia Martí lanza el castillo de clausura desde la playa, mezclando el sonido de las olas con el estruendo de los fuegos artificiales para despedir julio con estilo."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://valenciasecreta.com/en/fair-july-valencia-program/",
+      "provider": "Valencia Secreta"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "ZAZ Concert",
+      "es": "Concierto de ZAZ"
+    },
+    "date": "2025-07-28",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – FAR Festival",
+        "es": "Marina Norte – Festival FAR"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "French singer ZAZ brings her soulful voice and gypsy jazz-inspired pop to the FAR Festival. The charismatic artist behind “Je veux” will charm the audience with a mix of upbeat chansons and intimate ballads in her only concert in Valencia.",
+      "es": "La cantante francesa ZAZ trae su voz cargada de soul y su pop de inspiración gypsy jazz al Festival FAR. La carismática artista de “Je veux” encantará al público con una mezcla de canciones francesas alegres y baladas íntimas en su único concierto en Valencia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valencia.es/cas/agenda-de-la-ciudad/-/content/festival-far-valencia-2025",
+      "provider": "Valencia City Council"
+    },
+    "price": "From €30"
+  },
+  {
+    "title": {
+      "en": "\"The Light of San Nicolás\" Immersive Show",
+      "es": "\"La Llum de San Nicolás\" – espectáculo inmersivo"
+    },
+    "date": "2025-07-28",
+    "location": {
+      "name": {
+        "en": "Saint Nicholas Church",
+        "es": "Iglesia de San Nicolás"
+      },
+      "address": "Carrer dels Cavallers, 35",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "An enchanting audiovisual experience inside Valencia’s “Sistine Chapel.” Using projection mapping, music and narration, this nighttime show illuminates the ornate vaulted ceilings of San Nicolás Church, telling its art and history in a captivating way.",
+      "es": "Una envolvente experiencia audiovisual dentro de la “Capilla Sixtina” valenciana. Usando proyecciones mapping, música y narración, este espectáculo nocturno ilumina las ornamentadas bóvedas pintadas de la Iglesia de San Nicolás, relatando su arte e historia de forma cautivadora."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.laluzdesannicolas.com",
+      "provider": "La Llum de San Nicolás"
+    },
+    "price": "€8"
+  },
+  {
+    "title": {
+      "en": "Beach Volleyball Finals & Awards",
+      "es": "Finales y premios – Vóley playa"
+    },
+    "date": "2025-07-28",
+    "location": {
+      "name": {
+        "en": "Malvarrosa Beach Volleyball Arena",
+        "es": "Arena de vóley playa de la Malvarrosa"
+      },
+      "address": "Passeig Marítim de València, 30",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "The Open La Malva tournament concludes with final matches and trophy presentations. Cheer on the last teams standing as they spike it out for the championship, then join the celebratory awards ceremony on the sand.",
+      "es": "El torneo Open La Malva concluye con los partidos finales y la entrega de trofeos. Anima a los últimos equipos en liza mientras rematan por el campeonato, y luego únete a la ceremonia de premios y celebración sobre la arena."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://fdmvalencia.es/agenda/xv-open-la-malva-2025",
+      "provider": "Fundación Deportiva Municipal"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Stand-Up Comedy at Sala Girasol",
+      "es": "Comedia stand-up en Sala Girasol"
+    },
+    "date": "2025-07-29",
+    "location": {
+      "name": {
+        "en": "Sala Girasol Comedy Club",
+        "es": "Sala Girasol (club de comedia)"
+      },
+      "address": "Calle dels Cavallers, 40",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Laugh out loud at Valencia’s legendary comedy club, Sala Girasol. Every Tuesday, top local comedians and emerging talents hit the stage with fresh stand-up sets (in Spanish) – an authentic taste of Valencia’s humor and nightlife.",
+      "es": "Ríete a carcajadas en el legendario club de comedia valenciano, la Sala Girasol. Cada martes, los mejores cómicos locales y talentos emergentes suben al escenario con nuevos monólogos (en español) – una muestra auténtica del humor y la vida nocturna de Valencia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.salagirasol.com/cartelera",
+      "provider": "Sala Girasol"
+    },
+    "price": "€10"
+  },
+  {
+    "title": {
+      "en": "Sunset Wine & Music by the Sea",
+      "es": "Tardeo con vinos DO Valencia junto al mar"
+    },
+    "date": "2025-07-29",
+    "location": {
+      "name": {
+        "en": "Veles e Vents Terrace",
+        "es": "Terraza Veles e Vents"
+      },
+      "address": "Marina de València, Muelle de la Aduana",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "An early evening “tardeo” at the marina: taste Valencia DO wines with a sea breeze and live chill-out music. This free event invites you to relax by the water, enjoy a glass of local vino, and unwind to the sound of the waves and acoustic melodies.",
+      "es": "Un \"tardeo\" al atardecer en la marina: degusta vinos DO Valencia con la brisa marina y música chill-out en vivo. Este evento gratuito te invita a relajarte junto al agua, disfrutar de una copa de vino local y desconectar con el sonido de las olas y melodías acústicas."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/07/22/tardeo-vinos-do-valencia-mar/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Yoga Under the Stars (Turia Gardens)",
+      "es": "Yoga bajo las estrellas (Jardín del Turia)"
+    },
+    "date": "2025-07-29",
+    "location": {
+      "name": {
+        "en": "Tramo 11, Turia Riverbed Park",
+        "es": "Tramo 11, Jardín del Turia"
+      },
+      "address": "Passeig de la Petxina, s/n",
+      "district": "Campanar"
+    },
+    "description": {
+      "en": "Find your zen in a unique night-time yoga class held in Valencia’s riverbed park. Starting at 10pm, this free session invites yogis of all levels to practice under the open sky, surrounded by the calm of the Turia gardens and starlight.",
+      "es": "Encuentra tu zen en una clase de yoga nocturna única en el jardín del antiguo cauce. A partir de las 22h, esta sesión gratuita invita a yoguis de todos los niveles a practicar bajo el cielo abierto, rodeados de la calma de los jardines del Turia y la luz de las estrellas."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciabonita.es/2025/06/27/que-hacer-en-valencia-julio-2025/",
+      "provider": "Valencia Bonita"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "“Escena II: Latencias” Art Exhibition",
+      "es": "Exposición \"Escena II: Latencias\""
+    },
+    "date": "2025-07-30",
+    "location": {
+      "name": {
+        "en": "IVAM – Gallery 3",
+        "es": "IVAM – Galería 3"
+      },
+      "address": "Calle Guillem de Castro, 118",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "The IVAM unveils a new exhibition drawn from its collection, \"Scene II. Latencies,\" revealing hidden dialogues between works from 1925 to today. Discover modern and contemporary art pieces side by side, illustrating how past avant-gardes resonate in present creations.",
+      "es": "El IVAM presenta una nueva exposición de su colección, \"Escena II. Latencias\", que revela diálogos ocultos entre obras desde 1925 hasta hoy. Descubre piezas de arte moderno y contemporáneo lado a lado, ilustrando cómo las vanguardias pasadas resuenan en creaciones actuales."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.ivam.es/exposiciones/escena-ii-latencias/",
+      "provider": "IVAM"
+    },
+    "price": "Free (Sundays)"
+  },
+  {
+    "title": {
+      "en": "Valencia Old Town Free Walking Tour",
+      "es": "Tour a pie gratuito por el casco antiguo"
+    },
+    "date": "2025-07-30",
+    "location": {
+      "name": {
+        "en": "Plaza de la Virgen (Tour Start)",
+        "es": "Plaza de la Virgen (inicio del tour)"
+      },
+      "address": "Plaça de la Mare de Déu, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Learn about Valencia’s history and culture on a 2-hour free walking tour of the historic center. An expert guide leads you through landmarks like the Cathedral, the Silk Exchange, and Plaza del Ayuntamiento, sharing fascinating stories and local secrets along the way.",
+      "es": "Aprende sobre la historia y la cultura de Valencia en un tour a pie gratuito de 2 horas por el casco histórico. Un guía experto te lleva por monumentos como la Catedral, la Lonja de la Seda y la Plaza del Ayuntamiento, compartiendo fascinantes historias y secretos locales durante el recorrido."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/guided-tours/valencia-free-walking-tour",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Jazz Jam Session at Jimmy Glass",
+      "es": "Jam session de jazz en Jimmy Glass"
+    },
+    "date": "2025-07-30",
+    "location": {
+      "name": {
+        "en": "Jimmy Glass Jazz Bar",
+        "es": "Jimmy Glass Jazz Bar"
+      },
+      "address": "Calle Baja, 28",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Valencia’s premier jazz club hosts its weekly jam session. Enjoy an evening of spontaneous jazz as local musicians and international guests take turns improvising on stage – a must for music lovers seeking authentic nightlife vibes.",
+      "es": "El principal club de jazz de Valencia celebra su jam session semanal. Disfruta de una noche de jazz espontáneo mientras músicos locales e invitados internacionales se turnan improvisando en el escenario – un imprescindible para melómanos que buscan ambiente nocturno auténtico."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.jimmyglassjazz.net/en",
+      "provider": "Jimmy Glass"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Santana “Oneness” Tour Concert",
+      "es": "Concierto de Santana – Gira Oneness"
+    },
+    "date": "2025-07-31",
+    "location": {
+      "name": {
+        "en": "La Marina Norte – Auditorio",
+        "es": "Marina Norte – Auditorio"
+      },
+      "address": "Moll de la Duana, s/n",
+      "district": "Poblats Marítims"
+    },
+    "description": {
+      "en": "Guitar legend Carlos Santana closes out the FAR Festival with his \"Oneness\" World Tour stop in Valencia. Fans will experience the Grammy-winner’s signature blend of rock and Latin blues, jamming to classics like “Black Magic Woman” and “Smooth” in an unforgettable night by the sea.",
+      "es": "La leyenda de la guitarra Carlos Santana clausura el Festival FAR con una parada de su gira mundial \"Oneness\" en Valencia. Los fans disfrutarán de la inconfundible fusión de rock y blues latino del ganador del Grammy, vibrando con clásicos como “Black Magic Woman” y “Smooth” en una noche junto al mar inolvidable."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://farvalencia.es/",
+      "provider": "FAR València Festival"
+    },
+    "price": "From €50"
+  },
+  {
+    "title": {
+      "en": "Tribunal de las Aguas (Water Court)",
+      "es": "Tribunal de las Aguas de Valencia"
+    },
+    "date": "2025-07-31",
+    "location": {
+      "name": {
+        "en": "Plaza de la Virgen (Cathedral Door)",
+        "es": "Plaza de la Virgen (Puerta de los Apóstoles)"
+      },
+      "address": "Plaça de la Mare de Déu, s/n",
+      "district": "Ciutat Vella"
+    },
+    "description": {
+      "en": "Witness Valencia’s UNESCO-recognized Water Tribunal in action. Every Thursday at noon, eight black-clad farmers gather at the Cathedral’s Apostles Gate to resolve irrigation disputes from the huerta. This millennium-old open-air court is carried out orally in Valencian – a fascinating living tradition of justice.",
+      "es": "Sé testigo en vivo del Tribunal de las Aguas de Valencia reconocido por la UNESCO. Cada jueves al mediodía, ocho síndicos vestidos de negro se reúnen ante la Puerta de los Apóstoles de la Catedral para resolver disputas de riego de la huerta. Este tribunal milenario al aire libre se desarrolla oralmente en valenciano – una fascinante tradición viva de justicia."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-traditions/water-tribunal",
+      "provider": "Visit Valencia"
+    },
+    "price": "Free"
+  },
+  {
+    "title": {
+      "en": "Mestalla Forever Stadium Tour",
+      "es": "Tour del Estadio Mestalla Forever"
+    },
+    "date": "2025-07-31",
+    "location": {
+      "name": {
+        "en": "Mestalla Stadium (Valencia CF)",
+        "es": "Estadio de Mestalla (Valencia CF)"
+      },
+      "address": "Avinguda de Suècia, s/n",
+      "district": "El Pla del Real"
+    },
+    "description": {
+      "en": "Go behind the scenes of Valencia CF’s legendary Mestalla Stadium. This guided tour takes you through the trophy room, press room, locker rooms and even pitchside. Relive 100 years of football history and walk where heroes like Kempes and Villa played.",
+      "es": "Descubre el detrás de bastidores del legendario Estadio Mestalla del Valencia CF. Esta visita guiada te lleva por la sala de trofeos, sala de prensa, vestuarios e incluso el borde del césped. Revive 100 años de historia del fútbol y camina por donde jugaron héroes como Kempes y Villa."
+    },
+    "imageUrl": null,
+    "source": {
+      "url": "https://www.valenciacf.com/en/academy/about-mestalla/forever-tour",
+      "provider": "Valencia CF"
+    },
+    "price": "€15"
+  }
+]
