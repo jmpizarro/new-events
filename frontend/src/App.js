@@ -18,6 +18,7 @@ const App = () => {
   const [adminConfig, setAdminConfig] = useState(null);
 
   const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8088';
+  const DEFAULT_IMAGE = process.env.PUBLIC_URL + '/images/event.png';
 
   // Translations
   const translations = {
@@ -341,11 +342,11 @@ const App = () => {
     <div className="event-card" onClick={() => setSelectedEvent(event)}>
       <div className="event-image">
         <img
-          src={event.imageUrl}
+          src={event.imageUrl || DEFAULT_IMAGE}
           alt={event.title[language]}
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = '/images/event.png';
+            e.target.src = DEFAULT_IMAGE;
           }}
         />
         <div className="event-date-badge">
@@ -405,11 +406,11 @@ const App = () => {
             >
               <div className="event-image">
                 <img
-                  src={event.imageUrl}
+                  src={event.imageUrl || DEFAULT_IMAGE}
                   alt={event.title[language]}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = '/images/event.png';
+                    e.target.src = DEFAULT_IMAGE;
                   }}
                 />
                 <div className="event-date-badge">
@@ -467,12 +468,12 @@ const App = () => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
         <img
-          src={event.imageUrl}
+          src={event.imageUrl || DEFAULT_IMAGE}
           alt={event.title[language]}
           className="modal-image"
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = '/images/event.png';
+            e.target.src = DEFAULT_IMAGE;
           }}
         />
         <div className="modal-body">
