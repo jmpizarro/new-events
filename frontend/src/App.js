@@ -56,6 +56,8 @@ const App = () => {
       endDate: 'End Date',
       generateEvents: 'Generate Events',
       generateSummary: 'Generate Summary',
+      uploadEvents: 'Upload Events',
+      loadEvents: 'Load Events',
       adminLogin: 'Admin Login',
       username: 'Username',
       password: 'Password',
@@ -100,6 +102,8 @@ const App = () => {
       endDate: 'Fecha de Fin',
       generateEvents: 'Generar Eventos',
       generateSummary: 'Generar Resumen',
+      uploadEvents: 'Subir Eventos',
+      loadEvents: 'Cargar Eventos',
       adminLogin: 'Acceso de Administrador',
       username: 'Usuario',
       password: 'Contraseña',
@@ -511,6 +515,7 @@ const App = () => {
   // Admin panel component
   const AdminPanel = () => {
     const [configForm, setConfigForm] = useState(adminConfig || {});
+    const [selectedFile, setSelectedFile] = useState(null);
 
     useEffect(() => {
       setConfigForm(adminConfig || {});
@@ -529,6 +534,37 @@ const App = () => {
     const handleGenerateSummary = (e) => {
       e.preventDefault();
       generateSummary(configForm.startDate, configForm.endDate);
+    };
+
+    const handleFileChange = (e) => {
+      setSelectedFile(e.target.files[0]);
+    };
+
+    const handleUploadEvents = async (e) => {
+      e.preventDefault();
+      if (!selectedFile) return;
+      try {
+        const text = await selectedFile.text();
+        const response = await fetch(`${API_BASE_URL}/api/admin/upload-events`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${adminToken}`
+          },
+          body: text
+        });
+        if (response.ok) {
+          const data = await response.json();
+          alert(data.message);
+          fetchEvents();
+        } else {
+          const error = await response.json();
+          alert(`Failed to upload events: ${error.detail}`);
+        }
+      } catch (error) {
+        console.error('Error uploading events:', error);
+        alert('Failed to upload events');
+      }
     };
 
     return (
@@ -588,6 +624,16 @@ const App = () => {
                 {t('generateSummary')}
               </button>
             </div>
+          </form>
+        </div>
+
+        <div className="admin-section">
+          <h3>{t('uploadEvents')}</h3>
+          <form onSubmit={handleUploadEvents} className="upload-form">
+            <div className="form-group">
+              <input type="file" accept=".json" onChange={handleFileChange} />
+            </div>
+            <button type="submit" className="submit-btn">{t('loadEvents')}</button>
           </form>
         </div>
       </div>
