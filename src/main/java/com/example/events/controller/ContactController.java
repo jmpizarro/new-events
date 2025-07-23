@@ -33,7 +33,7 @@ public class ContactController {
         msg.setSubject("Contact form submission from " + request.name);
         msg.setText("From: " + request.name + " <" + request.email + ">\n\n" + request.message);
         mailSender.send(msg);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok().build(); 
     }
 }
 */

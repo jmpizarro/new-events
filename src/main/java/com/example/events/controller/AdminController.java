@@ -151,6 +151,7 @@ public class AdminController {
         logger.info("Prompt before calling: " + prompt);
         
         //String response = aiService.chat("What are the news for today 17/07/2025?");
+        
         String response = aiService.webSearch(prompt);
         String rawText = getResponseText(response);
         if (rawText != null) {

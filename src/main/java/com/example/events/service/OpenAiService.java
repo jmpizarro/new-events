@@ -52,7 +52,7 @@ public class OpenAiService {
 
         Map<String, Object> tool = new HashMap<>();
         tool.put("type", "web_search_preview");
-        tool.put("search_context_size", "high");
+        tool.put("search_context_size", "high"); 
 
         Map<String, Object> body = new HashMap<>();
         body.put("model", "gpt-4.1-mini");
