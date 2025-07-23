@@ -206,4 +206,23 @@ public class AdminController {
             return ResponseEntity.badRequest().body(Map.of("detail", "Invalid response from AI"));
         }
     }
+
+    @PostMapping("/upload-events")
+    public ResponseEntity<?> uploadEvents(@RequestHeader("Authorization") String token,
+                                          @RequestBody String eventsJson) {
+        if (!"Bearer admin-token".equals(token)) {
+            return ResponseEntity.status(401).build();
+        }
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            Event[] events = mapper.readValue(eventsJson, Event[].class);
+            eventRepository.deleteAll();
+            eventRepository.saveAll(List.of(events));
+            logger.info("Uploaded events: " + events.length);
+            return ResponseEntity.ok(Map.of("message", "Events uploaded"));
+        } catch (Exception e) {
+            logger.error("Failed to parse uploaded events", e);
+            return ResponseEntity.badRequest().body(Map.of("detail", "Invalid events file"));
+        }
+    }
 }
