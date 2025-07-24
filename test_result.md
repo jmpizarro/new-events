@@ -424,6 +424,18 @@ frontend:
           agent: "main"
           comment: "Added admin UI to choose resource file and load events"
 
+  - task: "Admin Panel Layout"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Reorganized admin panel into two-column grid and improved spacing"
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
@@ -460,3 +472,5 @@ agent_communication:
       message: "Updated calendar grid columns with minmax to prevent clipping when events are shown"
     - agent: "main"
       message: "Implemented resource-based event loading with new backend endpoints and admin UI"
+    - agent: "main"
+      message: "Reorganized admin panel layout into two columns and refined upload forms"
