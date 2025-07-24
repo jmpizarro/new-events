@@ -400,6 +400,30 @@ frontend:
           agent: "main"
           comment: "Added price field display in event cards and modal"
 
+  - task: "Load Events from Resources - Backend"
+    implemented: true
+    working: true
+    file: "src/main/java/com/example/events/controller/AdminController.java"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Added endpoints to list JSON files and load selected file into repository"
+
+  - task: "Load Events from Resources - Frontend"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Added admin UI to choose resource file and load events"
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
@@ -434,3 +458,5 @@ agent_communication:
       message: "Fixed calendar overflow on narrow screens so right edge is fully visible"
     - agent: "main"
       message: "Updated calendar grid columns with minmax to prevent clipping when events are shown"
+    - agent: "main"
+      message: "Implemented resource-based event loading with new backend endpoints and admin UI"
