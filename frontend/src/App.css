@@ -886,6 +886,36 @@ body {
   gap: 2rem;
 }
 
+/* New admin layout */
+.admin-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.admin-nav {
+  flex: 0 0 200px;
+}
+
+.admin-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav li {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+  transition: var(--transition-fast);
+}
+
+.admin-nav li:hover,
+.admin-nav li.active {
+  background-color: var(--primary-hover);
+  color: #fff;
+}
+
 .contact-panel {
   max-width: 1200px;
   margin: 0 auto;
@@ -1097,8 +1127,8 @@ body {
     height: 450px;
   }
 
-  .admin-grid {
-    grid-template-columns: 1fr;
+  .admin-layout {
+    flex-direction: column;
   }
 
   .event-card-deck .event-image {
