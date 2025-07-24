@@ -59,6 +59,8 @@ const App = () => {
       generateSummary: 'Generate Summary',
       uploadEvents: 'Upload Events',
       loadEvents: 'Load Events',
+      selectResourceFile: 'Select Resource File',
+      loadFromResources: 'Load From Resources',
       adminLogin: 'Admin Login',
       username: 'Username',
       password: 'Password',
@@ -105,6 +107,8 @@ const App = () => {
       generateSummary: 'Generar Resumen',
       uploadEvents: 'Subir Eventos',
       loadEvents: 'Cargar Eventos',
+      selectResourceFile: 'Seleccionar Archivo de Recursos',
+      loadFromResources: 'Cargar de Recursos',
       adminLogin: 'Acceso de Administrador',
       username: 'Usuario',
       password: 'Contraseña',
@@ -517,10 +521,17 @@ const App = () => {
   const AdminPanel = () => {
     const [configForm, setConfigForm] = useState(adminConfig || {});
     const [selectedFile, setSelectedFile] = useState(null);
+    const [eventFiles, setEventFiles] = useState([]);
+    const [selectedResource, setSelectedResource] = useState('');
 
     useEffect(() => {
       setConfigForm(adminConfig || {});
+      fetchEventFiles();
     }, [adminConfig]);
+
+    useEffect(() => {
+      if (adminToken) fetchEventFiles();
+    }, [adminToken]);
 
     const handleConfigSubmit = (e) => {
       e.preventDefault();
@@ -565,6 +576,47 @@ const App = () => {
       } catch (error) {
         console.error('Error uploading events:', error);
         alert('Failed to upload events');
+      }
+    };
+
+    const fetchEventFiles = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/event-files`, {
+          headers: { 'Authorization': `Bearer ${adminToken}` }
+        });
+        if (response.ok) {
+          const data = await response.json();
+          setEventFiles(data);
+          if (data.length > 0) setSelectedResource(data[0]);
+        }
+      } catch (err) {
+        console.error('Error fetching event files', err);
+      }
+    };
+
+    const handleLoadResource = async (e) => {
+      e.preventDefault();
+      if (!selectedResource) return;
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/admin/load-events`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${adminToken}`
+          },
+          body: JSON.stringify({ path: selectedResource })
+        });
+        if (response.ok) {
+          const data = await response.json();
+          alert(data.message);
+          fetchEvents();
+        } else {
+          const error = await response.json();
+          alert(`Failed to load events: ${error.detail}`);
+        }
+      } catch (err) {
+        console.error('Error loading events', err);
+        alert('Failed to load events');
       }
     };
 
@@ -633,6 +685,21 @@ const App = () => {
           <form onSubmit={handleUploadEvents} className="upload-form">
             <div className="form-group">
               <input type="file" accept=".json" onChange={handleFileChange} />
+            </div>
+            <button type="submit" className="submit-btn">{t('loadEvents')}</button>
+          </form>
+        </div>
+
+        <div className="admin-section">
+          <h3>{t('loadFromResources')}</h3>
+          <form onSubmit={handleLoadResource} className="upload-form">
+            <div className="form-group">
+              <label>{t('selectResourceFile')}:</label>
+              <select value={selectedResource} onChange={(e) => setSelectedResource(e.target.value)}>
+                {eventFiles.map(file => (
+                  <option key={file} value={file}>{file}</option>
+                ))}
+              </select>
             </div>
             <button type="submit" className="submit-btn">{t('loadEvents')}</button>
           </form>

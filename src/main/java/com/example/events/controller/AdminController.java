@@ -17,6 +17,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import org.springframework.core.io.ClassPathResource;
 
 @RestController
 @RequestMapping("/api/admin")
@@ -28,6 +34,7 @@ public class AdminController {
     private final EventSummaryRepository summaryRepository;
     private final OpenAiService aiService;
     private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
+    private static final String EVENTS_BASE_PATH = "valencia";
 
     public AdminController(AdminConfigRepository configRepository,
                            EventRepository eventRepository,
@@ -226,6 +233,53 @@ public class AdminController {
         } catch (Exception e) {
             logger.error("Failed to parse uploaded events", e);
             return ResponseEntity.badRequest().body(Map.of("detail", "Invalid events file"));
+        }
+    }
+
+    @GetMapping("/event-files")
+    public ResponseEntity<List<String>> listEventFiles(@RequestHeader("Authorization") String token) {
+        if (!"Bearer admin-token".equals(token)) {
+            return ResponseEntity.status(401).build();
+        }
+        try {
+            List<String> files = new ArrayList<>();
+            ClassPathResource base = new ClassPathResource(EVENTS_BASE_PATH);
+            File baseFile = base.getFile();
+            if (baseFile.exists() && baseFile.isDirectory()) {
+                Files.walk(baseFile.toPath())
+                        .filter(p -> p.toString().endsWith(".json"))
+                        .forEach(p -> files.add(baseFile.toPath().relativize(p).toString().replace(File.separatorChar, '/')));
+            }
+            return ResponseEntity.ok(files);
+        } catch (IOException e) {
+            logger.error("Failed to list event files", e);
+            return ResponseEntity.internalServerError().build();
+        }
+    }
+
+    static class LoadRequest {
+        public String path;
+    }
+
+    @PostMapping("/load-events")
+    public ResponseEntity<?> loadEvents(@RequestHeader("Authorization") String token,
+                                        @RequestBody LoadRequest request) {
+        if (!"Bearer admin-token".equals(token)) {
+            return ResponseEntity.status(401).build();
+        }
+        if (request == null || request.path == null || request.path.isBlank()) {
+            return ResponseEntity.badRequest().body(Map.of("detail", "File path required"));
+        }
+        try (InputStream is = new ClassPathResource(EVENTS_BASE_PATH + "/" + request.path).getInputStream()) {
+            ObjectMapper mapper = new ObjectMapper();
+            Event[] events = mapper.readValue(is, Event[].class);
+            eventRepository.deleteAll();
+            eventRepository.saveAll(List.of(events));
+            logger.info("Loaded events from resource: {}", request.path);
+            return ResponseEntity.ok(Map.of("message", "Events loaded"));
+        } catch (IOException e) {
+            logger.error("Failed to load events", e);
+            return ResponseEntity.badRequest().body(Map.of("detail", "Unable to read file"));
         }
     }
 }
