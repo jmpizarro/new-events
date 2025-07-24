@@ -387,6 +387,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Increased contact form max-width to 1200px per user feedback"
+        - working: true
+          agent: "main"
+          comment: "Widened contact panel further and enlarged login form with additional spacing"
 
   - task: "Display Event Price"
     implemented: true
@@ -460,3 +463,5 @@ agent_communication:
       message: "Updated calendar grid columns with minmax to prevent clipping when events are shown"
     - agent: "main"
       message: "Implemented resource-based event loading with new backend endpoints and admin UI"
+    - agent: "main"
+      message: "Adjusted contact and login form styling for wider layout and better spacing"
