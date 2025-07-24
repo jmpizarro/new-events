@@ -523,6 +523,7 @@ const App = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [eventFiles, setEventFiles] = useState([]);
     const [selectedResource, setSelectedResource] = useState('');
+    const [activeSection, setActiveSection] = useState('config');
 
     useEffect(() => {
       setConfigForm(adminConfig || {});
@@ -627,84 +628,102 @@ const App = () => {
           <button onClick={handleAdminLogout} className="logout-btn">{t('logout')}</button>
         </div>
 
-        <div className="admin-grid">
-        <div className="admin-section">
-          <h3>{t('configuration')}</h3>
-          <form onSubmit={handleConfigSubmit} className="config-form">
-            <div className="form-group">
-              <label>{t('city')}:</label>
-              <input
-                type="text"
-                value={configForm.city || ''}
-                onChange={(e) => setConfigForm({...configForm, city: e.target.value})}
-              />
-            </div>
-            <div className="form-group">
-              <label>{t('categories')}:</label>
-              <input
-                type="text"
-                value={configForm.categories?.join(', ') || ''}
-                onChange={(e) => setConfigForm({...configForm, categories: e.target.value.split(', ')})}
-              />
-            </div>
-            <div className="form-group">
-              <label>{t('startDate')}:</label>
-              <input
-                type="date"
-                value={configForm.startDate || ''}
-                onChange={(e) => setConfigForm({...configForm, startDate: e.target.value})}
-              />
-            </div>
-            <div className="form-group">
-              <label>{t('endDate')}:</label>
-              <input
-                type="date"
-                value={configForm.endDate || ''}
-                onChange={(e) => setConfigForm({...configForm, endDate: e.target.value})}
-              />
-            </div>
-            <button type="submit" className="submit-btn">{t('updateConfig')}</button>
-          </form>
-        </div>
+        <div className="admin-layout">
+          <nav className="admin-nav">
+            <ul>
+              <li className={activeSection === 'config' ? 'active' : ''} onClick={() => setActiveSection('config')}>{t('configuration')}</li>
+              <li className={activeSection === 'generate' ? 'active' : ''} onClick={() => setActiveSection('generate')}>{t('generateContent')}</li>
+              <li className={activeSection === 'upload' ? 'active' : ''} onClick={() => setActiveSection('upload')}>{t('uploadEvents')}</li>
+              <li className={activeSection === 'load' ? 'active' : ''} onClick={() => setActiveSection('load')}>{t('loadFromResources')}</li>
+            </ul>
+          </nav>
+          <div className="admin-content">
+            {activeSection === 'config' && (
+              <div className="admin-section">
+                <h3>{t('configuration')}</h3>
+                <form onSubmit={handleConfigSubmit} className="config-form">
+                  <div className="form-group">
+                    <label>{t('city')}:</label>
+                    <input
+                      type="text"
+                      value={configForm.city || ''}
+                      onChange={(e) => setConfigForm({ ...configForm, city: e.target.value })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>{t('categories')}:</label>
+                    <input
+                      type="text"
+                      value={configForm.categories?.join(', ') || ''}
+                      onChange={(e) => setConfigForm({ ...configForm, categories: e.target.value.split(', ') })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>{t('startDate')}:</label>
+                    <input
+                      type="date"
+                      value={configForm.startDate || ''}
+                      onChange={(e) => setConfigForm({ ...configForm, startDate: e.target.value })}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>{t('endDate')}:</label>
+                    <input
+                      type="date"
+                      value={configForm.endDate || ''}
+                      onChange={(e) => setConfigForm({ ...configForm, endDate: e.target.value })}
+                    />
+                  </div>
+                  <button type="submit" className="submit-btn">{t('updateConfig')}</button>
+                </form>
+              </div>
+            )}
 
-        <div className="admin-section">
-          <h3>{t('generateContent')}</h3>
-          <form className="generate-form">
-            <div className="button-group">
-              <button type="button" onClick={handleGenerateEvents} className="generate-btn">
-                {t('generateEvents')}
-              </button>
-              <button type="button" onClick={handleGenerateSummary} className="generate-btn">
-                {t('generateSummary')}
-              </button>
-            </div>
-          </form>
-        </div>
+            {activeSection === 'generate' && (
+              <div className="admin-section">
+                <h3>{t('generateContent')}</h3>
+                <form className="generate-form">
+                  <div className="button-group">
+                    <button type="button" onClick={handleGenerateEvents} className="generate-btn">
+                      {t('generateEvents')}
+                    </button>
+                    <button type="button" onClick={handleGenerateSummary} className="generate-btn">
+                      {t('generateSummary')}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            )}
 
-        <div className="admin-section">
-          <h3>{t('uploadEvents')}</h3>
-          <form onSubmit={handleUploadEvents} className="upload-form">
-            <div className="form-group">
-              <input type="file" accept=".json" onChange={handleFileChange} />
-            </div>
-            <button type="submit" className="submit-btn">{t('loadEvents')}</button>
-          </form>
-        </div>
+            {activeSection === 'upload' && (
+              <div className="admin-section">
+                <h3>{t('uploadEvents')}</h3>
+                <form onSubmit={handleUploadEvents} className="upload-form">
+                  <div className="form-group">
+                    <input type="file" accept=".json" onChange={handleFileChange} />
+                  </div>
+                  <button type="submit" className="submit-btn">{t('loadEvents')}</button>
+                </form>
+              </div>
+            )}
 
-        <div className="admin-section">
-          <h3>{t('loadFromResources')}</h3>
-          <form onSubmit={handleLoadResource} className="upload-form">
-            <div className="form-group">
-              <label>{t('selectResourceFile')}:</label>
-              <select value={selectedResource} onChange={(e) => setSelectedResource(e.target.value)}>
-                {eventFiles.map(file => (
-                  <option key={file} value={file}>{file}</option>
-                ))}
-              </select>
-            </div>
-            <button type="submit" className="submit-btn">{t('loadEvents')}</button>
-          </form>
-        </div>
+            {activeSection === 'load' && (
+              <div className="admin-section">
+                <h3>{t('loadFromResources')}</h3>
+                <form onSubmit={handleLoadResource} className="upload-form">
+                  <div className="form-group">
+                    <label>{t('selectResourceFile')}:</label>
+                    <select value={selectedResource} onChange={(e) => setSelectedResource(e.target.value)}>
+                      {eventFiles.map(file => (
+                        <option key={file} value={file}>{file}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <button type="submit" className="submit-btn">{t('loadEvents')}</button>
+                </form>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
