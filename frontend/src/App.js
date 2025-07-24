@@ -626,7 +626,8 @@ const App = () => {
           <h2>{t('adminPanel')}</h2>
           <button onClick={handleAdminLogout} className="logout-btn">{t('logout')}</button>
         </div>
-        
+
+        <div className="admin-grid">
         <div className="admin-section">
           <h3>{t('configuration')}</h3>
           <form onSubmit={handleConfigSubmit} className="config-form">
@@ -703,6 +704,7 @@ const App = () => {
             </div>
             <button type="submit" className="submit-btn">{t('loadEvents')}</button>
           </form>
+        </div>
         </div>
       </div>
     );

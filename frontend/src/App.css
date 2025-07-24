@@ -880,6 +880,12 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
 .contact-panel {
   max-width: 1200px;
   margin: 0 auto;
@@ -929,6 +935,26 @@ body {
 .generate-form {
   display: grid;
   gap: 1rem;
+}
+
+.upload-form .form-group {
+  margin-bottom: 0.75rem;
+}
+
+.form-group select {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
 }
 
 .form-group {
@@ -1069,6 +1095,10 @@ body {
   .event-deck {
     max-width: 100%;
     height: 450px;
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr;
   }
 
   .event-card-deck .event-image {
