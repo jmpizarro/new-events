@@ -887,7 +887,7 @@ body {
 }
 
 .contact-panel {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1022,8 +1022,12 @@ body {
   border-radius: var(--border-radius);
   padding: 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   box-shadow: var(--shadow-lg);
+}
+
+.login-form .form-group {
+  margin-bottom: 1rem;
 }
 
 .login-form h2 {
@@ -1041,6 +1045,7 @@ body {
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 600;
+  margin-top: 0.5rem;
   transition: var(--transition-fast);
 }
 
