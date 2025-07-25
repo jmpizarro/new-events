@@ -390,6 +390,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Widened contact panel further and enlarged login form with additional spacing"
+        - working: true
+          agent: "main"
+          comment: "Set contact panel max-width to 1200px so form spans wider"
 
   - task: "Display Event Price"
     implemented: true
@@ -480,4 +483,6 @@ agent_communication:
       message: "Implemented resource-based event loading with new backend endpoints and admin UI"
     - agent: "main"
       message: "Added sidebar navigation to admin panel for clearer organization"
+    - agent: "main"
+      message: "Adjusted contact panel width to fully span available space"
 
