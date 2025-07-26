@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
-import { Dialog, Menu, Transition } from '@headlessui/react';
+import { Dialog, Menu, Transition, DialogBackdrop } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faTimes, faSpinner, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -474,7 +474,7 @@ const App = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-40" />
+            <DialogBackdrop className="fixed inset-0 bg-black bg-opacity-40" />
           </Transition.Child>
 
           <span className="inline-block h-screen align-middle" aria-hidden="true">
