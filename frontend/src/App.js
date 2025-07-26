@@ -474,7 +474,10 @@ const App = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <DialogBackdrop className="fixed inset-0 bg-black bg-opacity-40" />
+            <DialogBackdrop
+              className="fixed inset-0 bg-black bg-opacity-40"
+              onClick={onClose}
+            />
           </Transition.Child>
 
           <span className="inline-block h-screen align-middle" aria-hidden="true">
@@ -489,8 +492,8 @@ const App = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full max-w-md transform overflow-hidden rounded-lg bg-white dark:bg-gray-700 p-6 text-left align-middle shadow-xl transition-all">
-              <button className="absolute right-4 top-4 text-gray-500" onClick={onClose}>
+            <div className="relative inline-block w-full max-w-md transform overflow-hidden rounded-lg bg-white dark:bg-gray-700 p-6 text-left align-middle shadow-xl transition-all">
+              <button className="absolute -right-3 -top-3 text-gray-500 bg-white rounded-full p-2 shadow" onClick={onClose}>
                 <FontAwesomeIcon icon={faTimes} />
               </button>
               <img

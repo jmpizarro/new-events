@@ -471,6 +471,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Fixed Dialog overlay by using DialogBackdrop for event details"
+        - working: true
+          agent: "main"
+          comment: "Moved modal close button outside image and enabled closing on background click"
 
   - task: "FontAwesome Icons"
     implemented: true
@@ -529,4 +532,6 @@ agent_communication:
       message: "Adjusted contact panel width to fully span available space"
     - agent: "main"
       message: "Integrated Tailwind design with Headless UI modals and FontAwesome icons"
+    - agent: "main"
+      message: "Moved modal close button outside image and enabled closing dialog when clicking outside"
 
