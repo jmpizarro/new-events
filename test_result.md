@@ -468,6 +468,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Replaced modal and navigation with Headless UI Dialog and Menu"
+        - working: true
+          agent: "main"
+          comment: "Fixed Dialog overlay by using DialogBackdrop for event details"
 
   - task: "FontAwesome Icons"
     implemented: true
