@@ -528,7 +528,17 @@ const App = () => {
                   <strong>{t('location')}:</strong> {event.location.name[language]}
                 </div>
                 <div>
-                  <strong>{t('address')}:</strong> {event.location.address}
+                  <strong>{t('address')}:</strong>{' '}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                      event.location.address
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    {event.location.address}
+                  </a>
                 </div>
                 <div>
                   <strong>{t('district')}:</strong> {event.location.district}
@@ -541,8 +551,14 @@ const App = () => {
               </div>
               <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{event.description[language]}</p>
               <div className="mt-4 text-right text-sm">
-                <a href={event.source.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  {t('viewOn')} {event.source.provider}
+                <span className="mr-1 font-semibold">{t('source')}:</span>
+                <a
+                  href={event.source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {event.source.provider}
                 </a>
               </div>
             </div>
