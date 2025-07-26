@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import { Dialog, Menu, Transition } from '@headlessui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faTimes, faSpinner, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 
 const App = () => {
@@ -343,38 +347,40 @@ const App = () => {
 
   // Event card component
   const EventCard = ({ event }) => (
-    <div className="event-card" onClick={() => setSelectedEvent(event)}>
-      <div className="event-image">
+    <div
+      className="event-card bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform transition hover:-translate-y-1 cursor-pointer"
+      onClick={() => setSelectedEvent(event)}
+    >
+      <div className="relative h-48 overflow-hidden">
         <img
           src={event.imageUrl || DEFAULT_IMAGE}
           alt={event.title[language]}
+          className="h-full w-full object-cover"
           onError={(e) => {
             e.target.onerror = null;
             e.target.src = DEFAULT_IMAGE;
           }}
         />
-        <div className="event-date-badge">
-          {new Date(event.date).toLocaleDateString('en-US', { 
-            month: 'short', 
-            day: 'numeric' 
+        <div className="absolute top-2 right-2 rounded-full bg-blue-600 text-white px-2 py-1 text-xs">
+          {new Date(event.date).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric'
           })}
         </div>
       </div>
-      <div className="event-content">
-        <h3>{event.title[language]}</h3>
-        <p className="event-location">
-          <svg className="location-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-          </svg>
+      <div className="p-4 space-y-2">
+        <h3 className="text-lg font-semibold">{event.title[language]}</h3>
+        <p className="event-location text-sm text-gray-600 dark:text-gray-300 flex items-center gap-2">
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="location-icon" />
           {event.location.name[language]}, {event.location.district}
         </p>
-        <p className="event-description">{event.description[language]}</p>
+        <p className="event-description text-sm text-gray-700 dark:text-gray-300">{event.description[language]}</p>
         {event.price && (
-          <div className="event-price">
+          <div className="event-price text-sm font-semibold">
             <span>{t('price')}: {event.price}</span>
           </div>
         )}
-        <div className="event-source">
+        <div className="event-source text-xs text-gray-500">
           <span>{t('source')}: {event.source.provider}</span>
         </div>
       </div>
@@ -427,9 +433,7 @@ const App = () => {
               <div className="event-content">
                 <h3>{event.title[language]}</h3>
                 <p className="event-location">
-                  <svg className="location-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                  </svg>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="location-icon" />
                   {event.location.name[language]}, {event.location.district}
                 </p>
                 <p className="event-description">{event.description[language]}</p>
@@ -468,53 +472,84 @@ const App = () => {
 
   // Event detail modal
   const EventDetailModal = ({ event, onClose }) => (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose}>&times;</button>
-        <img
-          src={event.imageUrl || DEFAULT_IMAGE}
-          alt={event.title[language]}
-          className="modal-image"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = DEFAULT_IMAGE;
-          }}
-        />
-        <div className="modal-body">
-          <h2>{event.title[language]}</h2>
-          <div className="event-details">
-            <div className="detail-item">
-              <strong>{t('date')}:</strong> {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-              })}
-            </div>
-            <div className="detail-item">
-              <strong>{t('location')}:</strong> {event.location.name[language]}
-            </div>
-            <div className="detail-item">
-              <strong>{t('address')}:</strong> {event.location.address}
-            </div>
-            <div className="detail-item">
-              <strong>{t('district')}:</strong> {event.location.district}
-            </div>
-            {event.price && (
-              <div className="detail-item">
-                <strong>{t('price')}:</strong> {event.price}
+    <Transition appear show={!!event} as={Fragment}>
+      <Dialog as="div" className="fixed inset-0 z-20 overflow-y-auto" onClose={onClose}>
+        <div className="min-h-screen px-4 text-center">
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-40" />
+          </Transition.Child>
+
+          <span className="inline-block h-screen align-middle" aria-hidden="true">
+            &#8203;
+          </span>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            <div className="inline-block w-full max-w-md transform overflow-hidden rounded-lg bg-white dark:bg-gray-700 p-6 text-left align-middle shadow-xl transition-all">
+              <button className="absolute right-4 top-4 text-gray-500" onClick={onClose}>
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+              <img
+                src={event.imageUrl || DEFAULT_IMAGE}
+                alt={event.title[language]}
+                className="mb-4 h-60 w-full rounded object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = DEFAULT_IMAGE;
+                }}
+              />
+              <Dialog.Title as="h2" className="text-lg font-bold mb-2">
+                {event.title[language]}
+              </Dialog.Title>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <strong>{t('date')}:</strong> {new Date(event.date).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </div>
+                <div>
+                  <strong>{t('location')}:</strong> {event.location.name[language]}
+                </div>
+                <div>
+                  <strong>{t('address')}:</strong> {event.location.address}
+                </div>
+                <div>
+                  <strong>{t('district')}:</strong> {event.location.district}
+                </div>
+                {event.price && (
+                  <div>
+                    <strong>{t('price')}:</strong> {event.price}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-          <p className="event-description">{event.description[language]}</p>
-          <div className="event-source">
-            <a href={event.source.url} target="_blank" rel="noopener noreferrer">
-              {t('viewOn')} {event.source.provider}
-            </a>
-          </div>
+              <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{event.description[language]}</p>
+              <div className="mt-4 text-right text-sm">
+                <a href={event.source.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  {t('viewOn')} {event.source.provider}
+                </a>
+              </div>
+            </div>
+          </Transition.Child>
         </div>
-      </div>
-    </div>
+      </Dialog>
+    </Transition>
   );
 
   // Admin panel component
@@ -774,39 +809,44 @@ const App = () => {
     };
 
     return (
-      <div className="admin-panel contact-panel">
-        <div className="admin-header">
-          <h2>{t('contact')}</h2>
+      <div className="contact-panel max-w-lg mx-auto bg-white dark:bg-gray-700 rounded-lg shadow p-6">
+        <div className="admin-header mb-4">
+          <h2 className="text-xl font-semibold">{t('contact')}</h2>
         </div>
-        <form onSubmit={handleSubmit} className="config-form">
-          <div className="form-group">
-            <label>{t('name')}</label>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm mb-1">{t('name')}</label>
             <input
               type="text"
+              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               required
             />
           </div>
-          <div className="form-group">
-            <label>{t('email')}</label>
+          <div>
+            <label className="block text-sm mb-1">{t('email')}</label>
             <input
               type="email"
+              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               required
             />
           </div>
-          <div className="form-group">
-            <label>{t('message')}</label>
+          <div>
+            <label className="block text-sm mb-1">{t('message')}</label>
             <textarea
               rows="4"
+              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               required
             />
           </div>
-          <button type="submit" className="submit-btn">{t('send')}</button>
+          <button type="submit" className="submit-btn bg-blue-600 text-white px-4 py-2 rounded">
+            {t('send')}
+          </button>
         </form>
       </div>
     );
@@ -831,32 +871,65 @@ const App = () => {
             >
               {darkMode ? '☀️' : '🌙'}
             </button>
-            <nav className="nav-menu">
-              <button
-                className={`nav-item ${currentView === 'home' ? 'active' : ''}`}
-                onClick={() => setCurrentView('home')}
+            <Menu as="div" className="relative">
+              <Menu.Button className="nav-menu-btn">
+                <FontAwesomeIcon icon={faBars} />
+              </Menu.Button>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
               >
-                {t('home')}
-              </button>
-              <button
-                className={`nav-item ${currentView === 'calendar' ? 'active' : ''}`}
-                onClick={() => setCurrentView('calendar')}
-              >
-                {t('calendar')}
-              </button>
-              <button
-                className={`nav-item ${currentView === 'contact' ? 'active' : ''}`}
-                onClick={() => setCurrentView('contact')}
-              >
-                {t('contact')}
-              </button>
-              <button
-                className={`nav-item ${currentView === 'admin' ? 'active' : ''}`}
-                onClick={() => setCurrentView('admin')}
-              >
-                {isAdmin ? t('admin') : t('login')}
-              </button>
-            </nav>
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div className="py-1">
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          className={`${active ? 'bg-gray-100 dark:bg-gray-700' : ''} nav-item w-full text-left`}
+                          onClick={() => setCurrentView('home')}
+                        >
+                          {t('home')}
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          className={`${active ? 'bg-gray-100 dark:bg-gray-700' : ''} nav-item w-full text-left`}
+                          onClick={() => setCurrentView('calendar')}
+                        >
+                          {t('calendar')}
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          className={`${active ? 'bg-gray-100 dark:bg-gray-700' : ''} nav-item w-full text-left`}
+                          onClick={() => setCurrentView('contact')}
+                        >
+                          {t('contact')}
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          className={`${active ? 'bg-gray-100 dark:bg-gray-700' : ''} nav-item w-full text-left`}
+                          onClick={() => setCurrentView('admin')}
+                        >
+                          {isAdmin ? t('admin') : t('login')}
+                        </button>
+                      )}
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Transition>
+            </Menu>
           </div>
         </div>
       </header>
@@ -889,7 +962,10 @@ const App = () => {
             <div className="events-section">
               <h3>{t('next7Days')}</h3>
               {loading ? (
-                <div className="loading">{t('loadingEvents')}</div>
+                <div className="loading flex items-center justify-center py-8">
+                  <FontAwesomeIcon icon={faSpinner} spin className="mr-2" />
+                  {t('loadingEvents')}
+                </div>
               ) : (
                 <div className="events-timeline">
                   {(() => {
@@ -991,9 +1067,13 @@ const App = () => {
       <footer className="app-footer">
         <div className="footer-content">
           <p>&copy; {new Date().getFullYear()} Valencia Events</p>
-          <div className="footer-links">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://wa.me" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <div className="footer-links space-x-4">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
           </div>
         </div>
       </footer>
