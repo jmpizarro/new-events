@@ -68,11 +68,6 @@ const App = () => {
       adminLogin: 'Admin Login',
       username: 'Username',
       password: 'Password',
-      contact: 'Contact',
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
-      send: 'Send'
     },
     es: {
       title: 'Eventos Valencia',
@@ -116,11 +111,6 @@ const App = () => {
       adminLogin: 'Acceso de Administrador',
       username: 'Usuario',
       password: 'Contraseña',
-      contact: 'Contacto',
-      name: 'Nombre',
-      email: 'Correo',
-      message: 'Mensaje',
-      send: 'Enviar'
     }
   };
 
@@ -794,63 +784,6 @@ const App = () => {
     </div>
   );
 
-  const ContactForm = () => {
-    const [form, setForm] = useState({ name: '', email: '', message: '' });
-
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      await fetch(`${API_BASE_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      setForm({ name: '', email: '', message: '' });
-      alert('Message sent');
-    };
-
-    return (
-      <div className="contact-panel max-w-lg mx-auto bg-white dark:bg-gray-700 rounded-lg shadow p-6">
-        <div className="admin-header mb-4">
-          <h2 className="text-xl font-semibold">{t('contact')}</h2>
-        </div>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm mb-1">{t('name')}</label>
-            <input
-              type="text"
-              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm mb-1">{t('email')}</label>
-            <input
-              type="email"
-              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm mb-1">{t('message')}</label>
-            <textarea
-              rows="4"
-              className="w-full rounded border border-gray-300 p-2 dark:bg-gray-800"
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              required
-            />
-          </div>
-          <button type="submit" className="submit-btn bg-blue-600 text-white px-4 py-2 rounded">
-            {t('send')}
-          </button>
-        </form>
-      </div>
-    );
-  };
 
   // Main render
   return (
@@ -903,16 +836,6 @@ const App = () => {
                           onClick={() => setCurrentView('calendar')}
                         >
                           {t('calendar')}
-                        </button>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <button
-                          className={`${active ? 'bg-gray-100 dark:bg-gray-700' : ''} nav-item w-full text-left`}
-                          onClick={() => setCurrentView('contact')}
-                        >
-                          {t('contact')}
                         </button>
                       )}
                     </Menu.Item>
@@ -1052,9 +975,6 @@ const App = () => {
           isAdmin ? <AdminPanel /> : <LoginForm />
         )}
 
-        {currentView === 'contact' && (
-          <ContactForm />
-        )}
       </main>
 
       {selectedEvent && (

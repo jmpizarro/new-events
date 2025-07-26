@@ -7,7 +7,7 @@ Valencia Events is a full stack application for discovering cultural events in V
 ### Prerequisites
 - **Java 21** and **Maven**
 - **Node.js** and **npm** (or Yarn)
-- Optional: `OPENAI_API_KEY` plus mail credentials if you want AI generation and the contact form
+- Optional: `OPENAI_API_KEY` plus mail credentials if you want AI generation
 
 ### Backend
 1. Export environment variables or add them to `.env`:
