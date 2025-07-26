@@ -820,7 +820,27 @@ const App = () => {
             >
               {darkMode ? '☀️' : '🌙'}
             </button>
-            <Menu as="div" className="relative">
+            <div className="nav-menu hidden md:flex">
+              <button
+                className={`nav-item ${currentView === 'home' ? 'active' : ''}`}
+                onClick={() => setCurrentView('home')}
+              >
+                {t('home')}
+              </button>
+              <button
+                className={`nav-item ${currentView === 'calendar' ? 'active' : ''}`}
+                onClick={() => setCurrentView('calendar')}
+              >
+                {t('calendar')}
+              </button>
+              <button
+                className={`nav-item ${currentView === 'admin' ? 'active' : ''}`}
+                onClick={() => setCurrentView('admin')}
+              >
+                {isAdmin ? t('admin') : t('login')}
+              </button>
+            </div>
+            <Menu as="div" className="relative md:hidden">
               <Menu.Button className="nav-menu-btn">
                 <FontAwesomeIcon icon={faBars} />
               </Menu.Button>
