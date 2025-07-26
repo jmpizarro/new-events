@@ -23,6 +23,23 @@ const App = () => {
 
   const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8088';
   const DEFAULT_IMAGE = process.env.PUBLIC_URL + '/images/event.png';
+  const FALLBACK_IMAGES = {
+    fireworks: process.env.PUBLIC_URL + '/images/fireworks.png',
+    party: process.env.PUBLIC_URL + '/images/party.png',
+    food: process.env.PUBLIC_URL + '/images/food.png',
+    music: process.env.PUBLIC_URL + '/images/music.png',
+    sport: process.env.PUBLIC_URL + '/images/sport.png'
+  };
+
+  const getFallbackImage = (event) => {
+    const text = `${event.title.en} ${event.title.es} ${event.description.en} ${event.description.es}`.toLowerCase();
+    if (/firework|fuego|pirotec/.test(text)) return FALLBACK_IMAGES.fireworks;
+    if (/party|fiesta|festival|celebration/.test(text)) return FALLBACK_IMAGES.party;
+    if (/food|comida|gastron|tapa|paella|wine|beer|drink/.test(text)) return FALLBACK_IMAGES.food;
+    if (/music|música|musica|concert|band|orchestra|dj/.test(text)) return FALLBACK_IMAGES.music;
+    if (/sport|deporte|match|game|football|soccer|basketball|marathon|run|athletic/.test(text)) return FALLBACK_IMAGES.sport;
+    return DEFAULT_IMAGE;
+  };
 
   // Translations
   const translations = {
@@ -342,13 +359,13 @@ const App = () => {
       onClick={() => setSelectedEvent(event)}
     >
       <div className="relative h-48 overflow-hidden">
-        <img
-          src={event.imageUrl || DEFAULT_IMAGE}
+        <img 
+          src={event.imageUrl || getFallbackImage(event)}
           alt={event.title[language]}
           className="h-full w-full object-cover"
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = DEFAULT_IMAGE;
+            e.target.src = getFallbackImage(event);
           }}
         />
         <div className="absolute top-2 right-2 rounded-full bg-blue-600 text-white px-2 py-1 text-xs">
@@ -406,11 +423,11 @@ const App = () => {
             >
               <div className="event-image">
                 <img
-                  src={event.imageUrl || DEFAULT_IMAGE}
+                  src={event.imageUrl || getFallbackImage(event)}
                   alt={event.title[language]}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = DEFAULT_IMAGE;
+                    e.target.src = getFallbackImage(event);
                   }}
                 />
                 <div className="event-date-badge">
@@ -494,12 +511,12 @@ const App = () => {
                 <FontAwesomeIcon icon={faTimes} />
               </button>
               <img
-                src={event.imageUrl || DEFAULT_IMAGE}
+                src={event.imageUrl || getFallbackImage(event)}
                 alt={event.title[language]}
                 className="mb-4 h-60 w-full rounded object-cover"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = DEFAULT_IMAGE;
+                  e.target.src = getFallbackImage(event);
                 }}
               />
               <Dialog.Title as="h2" className="text-lg font-bold mb-2">
